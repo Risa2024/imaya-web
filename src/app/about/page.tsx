@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import Link from 'next/link';
-import NewsList from '@/components/common/NewsList';
+import { NewsList } from '@/components/common/NewsList';
 import { client } from '@/lib/microcms';
 import { News } from '@/types/microcms';
 
@@ -8,6 +8,7 @@ async function getNewsList() {
   try {
     const response = await client.get({
       endpoint: 'news',
+      queries: { limit: 3 },
     });
 
     if (!response || !response.contents) {
@@ -33,6 +34,7 @@ export default async function CompanyInfo() {
 
   return (
     <div className='container mx-0 max-w-md px-4 py-10 text-sm leading-6 tracking-widest md:mx-auto md:max-w-xl'>
+      {/* FIXME: ここにニュース一覧を仮で表示 */}
       <Suspense fallback={<div>Loading...</div>}>
         <NewsList news={newsList} />
       </Suspense>
