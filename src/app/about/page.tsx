@@ -5,6 +5,7 @@ import { client } from '@/lib/microcms';
 import { News } from '@/types/microcms';
 
 async function getNewsList() {
+  //動機処理
   try {
     const response = await client.get({
       endpoint: 'news',
@@ -22,7 +23,7 @@ async function getNewsList() {
   }
 }
 
-export default async function CompanyInfo() {
+export default async function AboutPage() {
   const newsList = await getNewsList();
   if (!newsList.length) {
     return (
