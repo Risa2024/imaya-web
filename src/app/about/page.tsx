@@ -5,15 +5,31 @@ import { client } from '@/lib/microcms';
 import { News } from '@/types/microcms';
 
 async function getNewsList() {
-  const response = await client.get({
-    endpoint: 'news', // エンドポイントを'news'に変更
-    queries: { limit: 10 },
-  });
-  return response.contents as News[];
+  try {
+    const response = await client.get({
+      endpoint: 'news',
+    });
+
+    if (!response || !response.contents) {
+      throw new Error('ニュースデータの形式が不正です');
+    }
+
+    return response.contents as News[];
+  } catch (error) {
+    console.error('ニュース一覧の取得に失敗しました:', error);
+    throw error;
+  }
 }
 
 export default async function CompanyInfo() {
   const newsList = await getNewsList();
+  if (!newsList.length) {
+    return (
+      <div className='py-4 text-center'>
+        ニュースの読み込みに失敗しました。後ほど再度お試しください。
+      </div>
+    );
+  }
 
   return (
     <div className='container mx-0 max-w-md px-4 py-10 text-sm leading-6 tracking-widest md:mx-auto md:max-w-xl'>
