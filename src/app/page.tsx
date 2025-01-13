@@ -12,6 +12,7 @@ import {
 export default function WelcomePage() {
   return (
     <Carousel
+      className='z-0'
       plugins={[
         Autoplay({
           delay: 5000,

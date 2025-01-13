@@ -7,8 +7,8 @@ import { MainFooter } from '@/components/common/MainFooter';
 
 export const dynamic = 'force-dynamic';
 export const metadata: Metadata = {
-  title: 'Omoma',
-  description: 'Omoma is a social media platform for sharing your mood.',
+  title: 'imaya',
+  description: 'imaya is a shop in Ehime specializing in handmade kitchen car .',
 };
 
 export const kosugi = Kosugi({
