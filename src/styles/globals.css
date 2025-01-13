@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    html,
+    body {
+      font-family: var(--font-alegreya), var(--font-kosugi);
+      letter-spacing: 0.08em;
+    }
+    :lang(en) {
+      font-family: var(--font-alegreya);
+      letter-spacing: 0.02em;
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
