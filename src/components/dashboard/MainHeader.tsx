@@ -1,23 +1,48 @@
+'use client';
+
+import { Menu } from 'lucide-react';
+import React from 'react';
+import { useState } from 'react';
+import { Button } from '@/components/ui/button';
 // import Link from 'next/link';
 // import Image from 'next/image';
 
 export const dynamic = 'force-dynamic';
 
-export const MainHeader = async () => {
+export const MainHeader = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <header className=''>
-      <nav className='container mx-auto flex max-w-6xl items-center justify-between p-2'>
-        <h1 className='text-2xl font-bold'>今屋のハンバーガ えひめ</h1>
-        <div className='flex flex-row items-center justify-between gap-4 lg:hidden'>
-          <p>ホーム</p>
-          <p>私たちについて</p>
-          <p>お問い合わせ</p>
-        </div>
-        {/* メニューボタン */}
-        <div className='lg:hidden'>
-          <button>メニュー</button>
-        </div>
-      </nav>
+    <header className='container mx-auto flex max-w-6xl items-center justify-between p-2'>
+      <h1 className='text-2xl font-bold'>今屋のハンバーガ えひめ</h1>
+      <div className='hidden flex-row items-center gap-4 md:flex'>
+        {/* デスクトップサイズでのメニュー表示 */}
+        <div className='hidden flex-row items-center gap-4 md:flex'></div>
+        <p>ホーム</p>
+        <p>私たちについて</p>
+      </div>
+      {/* モバイルサイズでのメニューボタン */}
+      <div className='lg:hidden'>
+        <Button variant='default' size='icon' onClick={toggleMenu}>
+          <Menu />
+          {/*メニュータグを置く*/}
+        </Button>
+        {/* <button onClick={toggleMenu} className='rounded bg-gray-200 p-2'>
+          メニュー
+        </button> */}
+
+        {/* モバイルサイズでのトグルメニュー */}
+        {isMenuOpen && (
+          <div className='absolute left-0 top-12 flex w-full flex-col gap-2 bg-white p-4 shadow-md'>
+            <p>ホーム</p>
+            <p>私たちについて</p>
+          </div>
+        )}
+      </div>
     </header>
   );
 };
