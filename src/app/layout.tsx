@@ -7,7 +7,7 @@ import { MainFooter } from '@/components/common/MainFooter';
 
 export const dynamic = 'force-dynamic';
 export const metadata: Metadata = {
-  title: 'imaya.',
+  title: 'imaya..',
   description: 'imaya is a shop in Ehime specializing in handmade kitchen car .',
 };
 
