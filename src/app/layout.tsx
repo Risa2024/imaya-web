@@ -1,21 +1,29 @@
 import type { Metadata } from 'next';
-import { Noto_Sans } from 'next/font/google';
+import { Kosugi, Alegreya } from 'next/font/google';
 import '@/styles/globals.css';
 import { MainHeader } from '@/components/dashboard/MainHeader';
 //import { MainHeaderTest } from '@/components/dashboard/MainHeaderTest';
 import { MainFooter } from '@/components/common/MainFooter';
-export const dynamic = 'force-dynamic';
 
+export const dynamic = 'force-dynamic';
 export const metadata: Metadata = {
-  title: '今屋のハンバーガー 愛媛店 - 愛媛発の本格クラフトバーガー専門店',
-  description:
-    '愛媛県松山市で人気の手作りハンバーガー専門店。100%国産牛パティと自家製バンズで作る本格クラフトバーガーをご提供。テイクアウトも可能で、地元の方々に愛される味をお届けします。',
+  title: 'imaya',
+  description: 'imaya is a shop in Ehime specializing in handmade kitchen car .',
 };
 
-const notoSans = Noto_Sans({
+export const kosugi = Kosugi({
+  weight: '400',
   subsets: ['latin'],
-  weight: ['400', '700'],
   display: 'swap',
+  preload: true,
+  variable: '--font-kosugi',
+});
+
+export const alegreya = Alegreya({
+  subsets: ['latin'],
+  display: 'swap',
+  preload: true,
+  variable: '--font-alegreya',
 });
 
 export default function RootLayout({
@@ -24,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='ja' className={`h-full ${notoSans.className}`}>
+    <html lang='ja' className={`h-full ${kosugi.variable} ${alegreya.variable}`}>
       <body className='flex min-h-screen flex-col'>
         <MainHeader />
         {/* <MainHeaderTest /> */}
