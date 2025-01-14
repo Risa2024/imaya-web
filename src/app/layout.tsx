@@ -7,8 +7,9 @@ import { MainFooter } from '@/components/common/MainFooter';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: 'imaya',
-  description: 'imaya is a shop in Ehime specializing in handmade kitchen car .',
+  title: '今屋のハンバーガー 愛媛店 - 愛媛発の本格クラフトバーガー専門店',
+  description:
+    '愛媛県松山市で人気の手作りハンバーガー専門店。100%国産牛パティと自家製バンズで作る本格クラフトバーガーをご提供。テイクアウトも可能で、地元の方々に愛される味をお届けします。',
 };
 
 const notoSans = Noto_Sans({
