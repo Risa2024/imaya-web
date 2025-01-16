@@ -34,7 +34,20 @@ export function CarouselSection() {
             className='h-auto w-full object-cover'
           />
         </CarouselItem>
-        {/* ... 他のCarouselItems ... */}
+        <Image
+          src='/tomato.jpg'
+          alt='Carousel Image 1'
+          width={1200}
+          height={800}
+          className='h-auto w-full object-cover'
+        />
+        <Image
+          src='/sosegi.jpg'
+          alt='Carousel Image 1'
+          width={1200}
+          height={800}
+          className='h-auto w-full object-cover'
+        />
       </CarouselContent>
       <CarouselPrevious />
       <CarouselNext />
