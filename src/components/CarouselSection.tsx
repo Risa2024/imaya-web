@@ -30,7 +30,7 @@ export function CarouselSection() {
             src='/kitchen.jpg'
             alt='Carousel Image 1'
             width={1200}
-            height={800}
+            height={630}
             className='h-auto w-full object-cover'
           />
         </CarouselItem>
@@ -39,7 +39,7 @@ export function CarouselSection() {
             src='/tomato.jpg'
             alt='Carousel Image 2'
             width={1200}
-            height={800}
+            height={630}
             className='h-auto w-full object-cover'
           />
         </CarouselItem>
@@ -48,7 +48,7 @@ export function CarouselSection() {
             src='/sosegi.jpg'
             alt='Carousel Image 3'
             width={1200}
-            height={800}
+            height={630}
             className='h-auto w-full object-cover'
           />
         </CarouselItem>
