@@ -34,10 +34,12 @@ export default async function WelcomePage() {
 
   return (
     <>
-      <CarouselSection />
-      <Suspense fallback={<div>Loading...</div>}>
-        <NewsList news={newsList} />
-      </Suspense>
+      <div className='flex flex-col'>
+        <CarouselSection />
+        <Suspense fallback={<div>Loading...</div>}>
+          <NewsList news={newsList} />
+        </Suspense>
+      </div>
     </>
   );
 }
