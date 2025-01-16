@@ -37,7 +37,9 @@ export default async function WelcomePage() {
       <div className='flex flex-col'>
         <CarouselSection />
         <Suspense fallback={<div>Loading...</div>}>
-          <NewsList news={newsList} />
+          <div className='my-10'>
+            <NewsList news={newsList} />
+          </div>
         </Suspense>
       </div>
     </>
