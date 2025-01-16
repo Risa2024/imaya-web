@@ -24,7 +24,7 @@ export function CarouselSection() {
         loop: true,
       }}
     >
-      <CarouselContent>
+      <CarouselContent className=''>
         <CarouselItem>
           <Image
             src='/kitchen.jpg'
@@ -34,20 +34,24 @@ export function CarouselSection() {
             className='h-auto w-full object-cover'
           />
         </CarouselItem>
-        <Image
-          src='/tomato.jpg'
-          alt='Carousel Image 1'
-          width={1200}
-          height={800}
-          className='h-auto w-full object-cover'
-        />
-        <Image
-          src='/sosegi.jpg'
-          alt='Carousel Image 1'
-          width={1200}
-          height={800}
-          className='h-auto w-full object-cover'
-        />
+        <CarouselItem>
+          <Image
+            src='/tomato.jpg'
+            alt='Carousel Image 2'
+            width={1200}
+            height={800}
+            className='h-auto w-full object-cover'
+          />
+        </CarouselItem>
+        <CarouselItem>
+          <Image
+            src='/sosegi.jpg'
+            alt='Carousel Image 3'
+            width={1200}
+            height={800}
+            className='h-auto w-full object-cover'
+          />
+        </CarouselItem>
       </CarouselContent>
       <CarouselPrevious />
       <CarouselNext />
