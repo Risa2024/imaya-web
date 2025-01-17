@@ -42,27 +42,33 @@ export default async function WelcomePage() {
       <div className='flex flex-col'>
         <CarouselSection />
         <Suspense fallback={<div>Loading...</div>}>
-          <div className='my-10'>
+          <div className='mx-auto my-10 max-w-6xl'>
             <NewsList news={newsList} />
           </div>
         </Suspense>
-        <div className='flex flex-col items-center justify-between md:flex-row'>
-          <Image src='/dish.jpg' alt='料理の画像' width={500} height={300} />
-          <div className='flex flex-col items-center gap-4'>
-            <h1 className='text-2xl font-bold'>今屋のハンバーガーの歴史</h1>
-            今屋のハンバーガーは、今から50年前、福岡市の西公園の展望台で「今崎勝美」さんによって生まれました。
-            <br />
-            ホットドックにかける熱い情熱と、平和を願う温かい人柄に惹かれ日本全国、また世界中から絶え間なくお客様が訪れます。
-            <br />
-            幻のハンバーガーを味わいたいと、３時間待ちは当たり前の大人気店です。
-            <div className='mt-4'>
-              <Link href='/about'>
-                <Button className='rounded-md bg-blue-500 px-4 py-2 text-white'>詳細を見る</Button>
-              </Link>
+        <div className='mx-auto mb-60 max-w-6xl px-4'>
+          <div className='mb-60 flex flex-col items-center justify-between gap-20 md:flex-row'>
+            <Image src='/dish.jpg' alt='料理の画像' width={500} height={300} />
+            <div className='flex flex-col items-center gap-4'>
+              <h1 className='text-2xl font-bold'>今屋のハンバーガーの歴史</h1>
+              今屋のハンバーガーは、今から50年前、福岡市の西公園の展望台で「今崎勝美」さんによって生まれました。
+              <br />
+              ホットドックにかける熱い情熱と、平和を願う温かい人柄に惹かれ日本全国、また世界中から絶え間なくお客様が訪れます。
+              <br />
+              幻のハンバーガーを味わいたいと、３時間待ちは当たり前の大人気店です。
+              <div className='mt-4'>
+                <Link href='/about'>
+                  <Button className='rounded-md bg-blue-500 px-4 py-2 text-white'>
+                    詳細を見る
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-        <MenuList />
+        <div className=''>
+          <MenuList />
+        </div>
       </div>
     </>
   );
