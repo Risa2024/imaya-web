@@ -18,7 +18,7 @@ export default async function AboutPage() {
         <br />
       </p>
       <p className='text-center'>
-        <Link href='/' className='text-blue-600 hover:underline'>
+        <Link href='/app/page.tsx' className='text-blue-600 hover:underline'>
           ホームに戻る
         </Link>
       </p>
