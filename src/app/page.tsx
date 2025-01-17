@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
 import { CarouselSection } from '@/components/CarouselSection';
 import { NewsList } from '@/components/common/NewsList';
+import { MenuList } from '@/components/common/MenuList';
 import { client } from '@/lib/microcms';
 import { News } from '@/types/microcms';
 import Image from 'next/image';
@@ -61,6 +62,7 @@ export default async function WelcomePage() {
             </div>
           </div>
         </div>
+        <MenuList />
       </div>
     </>
   );
