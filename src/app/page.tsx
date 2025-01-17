@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
 async function getNewsList() {
+  //動機処理
   try {
     const response = await client.get({
       endpoint: 'news',
