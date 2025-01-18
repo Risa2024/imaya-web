@@ -76,6 +76,7 @@ export default async function WelcomePage() {
 
         {/* お問い合わせ */}
         <div className='relative mx-auto max-w-5xl px-4'>
+          {/* 背景画像 */}
           <Image
             src='/instaglam.jpg'
             alt='お問い合わせの画像'
@@ -88,7 +89,7 @@ export default async function WelcomePage() {
             お問い合わせは公式Instagramから
           </p>
 
-          <div className='absolute inset-0 mt-72 flex justify-center'>
+          <div className='md:my12 my-6 flex justify-center md:absolute md:inset-0 md:mt-56 lg:absolute lg:inset-0 lg:my-12 lg:mt-72'>
             <Button className='rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 px-24 py-4 font-bold text-white shadow-lg hover:opacity-75'>
               <Link href='/'>フォローはこちら</Link>
             </Button>
