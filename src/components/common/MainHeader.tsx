@@ -4,7 +4,8 @@ import React from 'react';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-// import Image from 'next/image';
+import Image from 'next/image';
+
 export const dynamic = 'force-dynamic';
 export const MainHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +14,17 @@ export const MainHeader = () => {
   };
   return (
     <header className='container z-50 mx-auto flex max-w-6xl items-center justify-between p-2'>
-      <h1 className='text-2xl font-bold'>今屋のハンバーガ 愛媛</h1>
+      {/* 左側の画像 */}
+      <div className='flex items-center'>
+        <Image
+          src='/imaya.jpg'
+          alt='今屋のハンバーガー'
+          width={25}
+          height={25}
+          className='mr-4 w-auto'
+        />
+        <h1 className='md:texy-2xl text-xl font-bold'>今屋のハンバーガ 愛媛</h1>
+      </div>
       <div className='hidden flex-row items-center gap-4 md:flex'>
         {/* デスクトップサイズでのメニュー表示 */}
         <div className='hidden flex-row items-center gap-4 md:flex'></div>
