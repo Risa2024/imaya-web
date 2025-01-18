@@ -82,9 +82,14 @@ export default async function WelcomePage() {
             height={600}
             className='hidden object-cover md:block'
           />
+
+          <p className='my-4 block text-center text-lg font-bold md:hidden'>
+            お問い合わせは公式Instagramから
+          </p>
+
           <div className='absolute inset-0 mt-72 flex justify-center'>
             <Button className='rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 px-24 py-4 font-bold text-white shadow-lg hover:opacity-75'>
-              <Link href='/'>お問い合わせ</Link>
+              <Link href='/'>フォローはこちら</Link>
             </Button>
           </div>
         </div>
