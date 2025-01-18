@@ -74,7 +74,14 @@ export default async function WelcomePage() {
         </div>
 
         {/* お問い合わせ */}
-        <div className=''></div>
+        <div className='relative mx-auto max-w-5xl px-4'>
+          <Image src='/instaglam.jpg' alt='お問い合わせの画像' width={1200} height={600} />
+          <div className='absolute inset-0 flex items-center justify-center'>
+            <Button className='rounded-full bg-white px-12 py-5 hover:bg-green-700 hover:text-white'>
+              <Link href='/'>お問い合わせ</Link>
+            </Button>
+          </div>
+        </div>
       </div>
     </>
   );
