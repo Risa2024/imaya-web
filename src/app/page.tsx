@@ -7,6 +7,7 @@ import { News } from '@/types/microcms';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { MainFooter } from '@/components/common/MainFooter';
 
 async function getNewsList() {
   //動機処理
@@ -82,7 +83,7 @@ export default async function WelcomePage() {
             height={600}
             className='hidden object-cover md:block'
           />
-
+          {/* スマホ版専用のテキスト */}
           <p className='my-4 block text-center text-lg font-bold md:hidden'>
             お問い合わせは公式Instagramから
           </p>
@@ -93,6 +94,7 @@ export default async function WelcomePage() {
             </Button>
           </div>
         </div>
+        <MainFooter />
       </div>
     </>
   );
