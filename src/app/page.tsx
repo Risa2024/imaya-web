@@ -77,7 +77,7 @@ export default async function WelcomePage() {
         {/* お問い合わせ */}
         <div className='relative mx-auto max-w-5xl px-4'>
           {/* 背景画像 */}
-          <Image
+          {/* <Image
             src='/instaglam.jpg'
             alt='お問い合わせの画像'
             width={1200}
@@ -89,7 +89,7 @@ export default async function WelcomePage() {
             お問い合わせは公式Instagramから
           </p>
 
-          <div className='flex justify-center md:absolute md:inset-x-0 md:mb-12 md:translate-y-[-130%] lg:top-auto lg:mb-4'>
+          <div className='flex justify-center'>
             <Link
               href='https://www.instagram.com/imayahamburger.ehime/'
               target='_blank'
