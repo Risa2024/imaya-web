@@ -68,9 +68,13 @@ export default async function WelcomePage() {
             </div>
           </div>
         </div>
+        {/* メニュー */}
         <div className=''>
           <MenuList />
         </div>
+
+        {/* お問い合わせ */}
+        <div className=''></div>
       </div>
     </>
   );
