@@ -89,12 +89,18 @@ export default async function WelcomePage() {
             お問い合わせは公式Instagramから
           </p>
 
-          <div className='md:my12 my-6 flex justify-center md:absolute md:inset-0 md:mt-56 lg:absolute lg:inset-0 lg:my-12 lg:mt-72'>
-            <Button className='rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 px-24 py-4 font-bold text-white shadow-lg hover:opacity-75'>
-              <Link href='/'>フォローはこちら</Link>
-            </Button>
+          <div className='flex justify-center md:absolute md:inset-x-0 md:top-1/2 md:translate-y-[-50%] lg:bottom-12 lg:top-auto'>
+            <Link
+              href='https://www.instagram.com/imayahamburger.ehime/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='inline-block w-64 whitespace-nowrap rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 px-6 py-3 text-center font-bold text-white shadow-lg hover:opacity-75'
+            >
+              フォローはこちら
+            </Link>
           </div>
         </div>
+
         <MainFooter />
       </div>
     </>
