@@ -75,9 +75,15 @@ export default async function WelcomePage() {
 
         {/* お問い合わせ */}
         <div className='relative mx-auto max-w-5xl px-4'>
-          <Image src='/instaglam.jpg' alt='お問い合わせの画像' width={1200} height={600} />
+          <Image
+            src='/instaglam.jpg'
+            alt='お問い合わせの画像'
+            width={1200}
+            height={600}
+            className='hidden object-cover md:block'
+          />
           <div className='absolute inset-0 mt-72 flex justify-center'>
-            <Button className='rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 px-12 py-4 font-bold text-white shadow-lg hover:opacity-55'>
+            <Button className='rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 px-24 py-4 font-bold text-white shadow-lg hover:opacity-75'>
               <Link href='/'>お問い合わせ</Link>
             </Button>
           </div>
