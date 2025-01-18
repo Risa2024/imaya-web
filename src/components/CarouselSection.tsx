@@ -6,8 +6,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+  //CarouselNext,
+  //CarouselPrevious,
 } from '@/components/ui/carousel';
 
 export function CarouselSection() {
@@ -16,7 +16,7 @@ export function CarouselSection() {
       className='z-0'
       plugins={[
         Autoplay({
-          delay: 5000,
+          delay: 4000,
         }),
       ]}
       opts={{
@@ -53,8 +53,8 @@ export function CarouselSection() {
           />
         </CarouselItem>
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      {/* <CarouselPrevious />
+      <CarouselNext /> */}
     </Carousel>
   );
 }
