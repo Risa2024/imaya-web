@@ -23,7 +23,7 @@ export const MainHeader = () => {
           height={25}
           className='mr-4 w-auto'
         />
-        <h1 className='md:texy-2xl text-xl font-bold'>今屋のハンバーガ 愛媛</h1>
+        <h1 className='text-xl font-bold md:text-3xl'>今屋のハンバーガ 愛媛</h1>
       </div>
       <div className='hidden flex-row items-center gap-4 md:flex'>
         {/* デスクトップサイズでのメニュー表示 */}
