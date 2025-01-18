@@ -89,7 +89,7 @@ export default async function WelcomePage() {
             お問い合わせは公式Instagramから
           </p>
 
-          <div className='flex justify-center md:absolute md:inset-x-0 md:top-1/2 md:translate-y-[-50%] lg:bottom-12 lg:top-auto'>
+          <div className='flex justify-center md:absolute md:inset-x-0 md:mb-12 md:translate-y-[-130%] lg:top-auto lg:mb-4'>
             <Link
               href='https://www.instagram.com/imayahamburger.ehime/'
               target='_blank'
