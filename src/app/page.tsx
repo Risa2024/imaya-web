@@ -62,7 +62,7 @@ export default async function WelcomePage() {
                 幻のハンバーガーを味わいたいと、３時間待ちは当たり前の大人気店です。
               </p>
               <div className='mt-4'>
-                <Button className='rounded-full bg-white px-12 py-5 hover:bg-green-700 hover:text-white'>
+                <Button className='mb-20 rounded-full bg-white px-12 py-5 hover:bg-green-700 hover:text-white'>
                   <Link href='/about'>詳細を見る</Link>
                 </Button>
               </div>
@@ -70,6 +70,7 @@ export default async function WelcomePage() {
           </div>
         </div>
         {/* メニュー */}
+        <Image src='/menu.jpg' alt='メニューの画像' width={300} height={100} className='' />
         <div className=''>
           <MenuList />
         </div>
