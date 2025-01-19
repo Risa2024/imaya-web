@@ -49,7 +49,13 @@ export default async function WelcomePage() {
         </Suspense>
         <div className='mx-auto max-w-5xl px-4'>
           <div className='md:my-40 md:mb-60 md:flex md:flex-row md:items-center md:justify-between md:gap-20'>
-            <Image src='/dish.jpg' alt='料理の画像' width={400} height={400} className='hidden' />
+            <Image
+              src='/dish.jpg'
+              alt='料理の画像'
+              width={400}
+              height={400}
+              className='hidden md:block'
+            />
             <div className='flex flex-col items-center gap-4'>
               <h1 className='mb-8 text-2xl font-bold'>今屋のハンバーガーの歴史</h1>
               <p className='leading-7'>
