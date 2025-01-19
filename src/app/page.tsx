@@ -56,8 +56,9 @@ export default async function WelcomePage() {
               height={400}
               className='hidden md:block'
             />
+
             <div className='flex flex-col items-center gap-4'>
-              <h1 className='mb-8 text-2xl font-bold'>今屋のハンバーガーの歴史</h1>
+              <h1 className='my-8 text-2xl font-bold'>今屋のハンバーガーの歴史</h1>
               <p className='leading-7'>
                 今屋のハンバーガーは、今から50年前、福岡市の西公園の展望台で「今崎勝美」さんによって生まれました。
                 <br />

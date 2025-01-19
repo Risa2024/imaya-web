@@ -13,7 +13,7 @@ export const NewsList = ({ news }: Props) => {
     <div className='py- mx-auto w-full px-4'>
       <div className='mb-8 text-center'>
         <h2 className='mb-2 text-sm font-medium text-muted-foreground'>News</h2>
-        <h1 className='text-2xl font-bold'>お知らせ</h1>
+        <h1 className='text-2xl font-bold md:text-3xl'>お知らせ</h1>
       </div>
       <div className='space-y-4'>
         {news.map((item) => (
