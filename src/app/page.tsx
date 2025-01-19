@@ -77,7 +77,7 @@ export default async function WelcomePage() {
         </div>
         {/* メニュー */}
         <div className='mb-20 flex items-center justify-center'>
-          <Image src='/menu.jpg' alt='メニューの画像' width={300} height={100} />
+          <Image src='/menu.jpg' alt='メニューの画像' width={210} height={90} className='' />
         </div>
         <div className=''>
           <MenuList />
