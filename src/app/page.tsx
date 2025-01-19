@@ -43,7 +43,7 @@ export default async function WelcomePage() {
       <div className='flex flex-col'>
         <CarouselSection />
         <Suspense fallback={<div>Loading...</div>}>
-          <div className='mx-auto my-10 max-w-7xl'>
+          <div className='mx-auto my-10 mb-20 max-w-7xl'>
             <NewsList news={newsList} />
           </div>
         </Suspense>
