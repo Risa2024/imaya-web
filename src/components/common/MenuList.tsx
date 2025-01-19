@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export const MenuList = () => {
   return (
-    <div className='grid w-full grid-cols-2 gap-6 p-4 md:grid-cols-3'>
+    <div className='mx-auto grid max-w-7xl grid-cols-2 gap-6 p-4 md:grid-cols-3'>
       <div className='overflow-hidden rounded-lg bg-white shadow-md transition-shadow duration-300'>
         <div className='relative h-48 w-full'>
           <Image src='/mixegg.jpg' alt='ミックスエッグ' fill className='object-contain' />

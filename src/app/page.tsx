@@ -47,7 +47,7 @@ export default async function WelcomePage() {
             <NewsList news={newsList} />
           </div>
         </Suspense>
-        <div className='mx-auto max-w-5xl px-4'>
+        <div className='mx-auto max-w-7xl'>
           <div className='md:my-40 md:mb-60 md:flex md:flex-row md:items-center md:justify-between md:gap-20'>
             <Image
               src='/dish.jpg'
@@ -68,7 +68,7 @@ export default async function WelcomePage() {
                 幻のハンバーガーを味わいたいと、３時間待ちは当たり前の大人気店です。
               </p>
               <div className='mt-4'>
-                <Button className='mb-20 rounded-full bg-white px-12 py-5 hover:bg-green-700 hover:text-white'>
+                <Button className='mb-16 rounded-full bg-white px-12 py-5 hover:bg-green-700 hover:text-white'>
                   <Link href='/about'>詳細を見る</Link>
                 </Button>
               </div>
@@ -76,7 +76,7 @@ export default async function WelcomePage() {
           </div>
         </div>
         {/* メニュー */}
-        <div className='mb-20 flex items-center justify-center'>
+        <div className='mb-32 flex items-center justify-center'>
           <Image src='/menu.jpg' alt='メニューの画像' width={210} height={90} className='' />
         </div>
         <div className=''>
@@ -86,18 +86,16 @@ export default async function WelcomePage() {
         {/* お問い合わせ */}
         <div className='relative mx-auto max-w-5xl px-4'>
           {/* 背景画像 */}
-          <Image
+          {/*<Image
             src='/instaglam.jpg'
             alt='お問い合わせの画像'
-            width={1200}
+            width={2000}
             height={600}
-            className='hidden object-cover md:block'
+            className='hidden object-cover w-full md:block'
           />
           {/* スマホ版専用のテキスト */}
-          <p className='my-4 block text-center text-lg font-bold md:hidden'>
-            お問い合わせは公式Instagramから
-          </p>
-          <div className='flex justify-center md:absolute md:inset-x-0 md:mb-12 md:translate-y-[-130%] lg:top-auto lg:mb-4'>
+          <p className='my-20 text-center text-2xl font-bold'>お問い合わせは公式Instagramから</p>
+          <div className='my-20 flex justify-center'>
             <Link
               href='https://www.instagram.com/imayahamburger.ehime/'
               target='_blank'
