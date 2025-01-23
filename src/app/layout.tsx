@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import '@/styles/globals.css';
 import { MainHeader } from '@/components/common/MainHeader';
 //import { MainHeaderTest } from '@/components/dashboard/MainHeaderTest';
-import { MainFooter } from '@/components/common/MainFooter';
+//import { MainFooter } from '@/components/common/MainFooter';
 
 export const dynamic = 'force-dynamic';
 export const metadata: Metadata = {
@@ -38,7 +38,7 @@ export default function RootLayout({
         <MainHeader />
         {/* <MainHeaderTest /> */}
         <main className='flex flex-grow'>{children}</main>
-        <MainFooter />
+        {/* <MainFooter /> */}
       </body>
     </html>
   );
