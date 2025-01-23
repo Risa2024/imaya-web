@@ -1,13 +1,16 @@
 import Link from 'next/link';
-//import Image from 'next/image';
+import { Button } from '@/components/ui/button';
 
 export default async function AboutPage() {
   return (
-    <div>
-      <h1 className='mb-8 text-base font-medium md:text-center'>About Us</h1>
-      <h2 className='mb-2 text-sm'>「今屋のハンバーガー 愛媛店」をはじめた想い</h2>
-      <p className='mb-5 border-b pb-5 tracking-widest'>
+    <div className='mx-auto max-w-5xl px-4'>
+      {/* <h1 className='mb-8 text-base font-medium bg-green-50 p-4 md:text-center'>About Us</h1> */}
+      <h2 className='mb-2 text-2xl font-bold'>
         <br />
+        今屋のハンバーガー 愛媛をはじめた想い
+        <br />
+      </h2>
+      <p className='mb-5 pb-5 tracking-widest'>
         <br />
         「いっぱいキャベツ入れてあげてよ。」
         <br />
@@ -18,8 +21,8 @@ export default async function AboutPage() {
         体に優しい食材で栄養バランスを考えたこの一品には、「お腹いっぱい食べてほしい」という私たちの想いが込められています。
       </p>
 
-      <h2 className='mb-2 text-sm'>小さなキッチンカーに込めた夢</h2>
-      <p className='mb-5 border-b pb-5'>
+      <h2 className='mb-2 text-2xl font-bold'>小さなキッチンカーに込めた夢</h2>
+      <p className='mb-5 pb-5'>
         私は小さなキッチンカーを作りました。
         <br />
         <br />
@@ -35,8 +38,8 @@ export default async function AboutPage() {
         健康を支える食事が、人の心を豊かにすることを、身をもって感じたのです。
       </p>
 
-      <h2 className='mb-2 text-sm'>奇跡的に与えられた時間を誰かのために</h2>
-      <p className='mb-5 border-b pb-5'>
+      <h2 className='mb-2 text-2xl font-bold'>奇跡的に与えられた時間を誰かのために</h2>
+      <p className='mb-5 pb-5'>
         奇跡的に与えられたこの時間を、誰かの幸せのために使いたい。
         <br />
         <br />
@@ -52,9 +55,9 @@ export default async function AboutPage() {
         私たちのハンバーガーが、食を通じてあなたの心に少しでも温かさを届けられたら、これ以上の喜びはありません。
       </p>
       <p className='text-center'>
-        <Link href='/' className='text-blue-600 hover:underline'>
-          ホームに戻る
-        </Link>
+        <Button className='mb-10 bg-gray-200 hover:bg-gray-300'>
+          <Link href='/'>ホームに戻る</Link>
+        </Button>
       </p>
     </div>
   );
