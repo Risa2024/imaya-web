@@ -55,7 +55,7 @@ export default async function AboutPage() {
         私たちのハンバーガーが、食を通じてあなたの心に少しでも温かさを届けられたら、これ以上の喜びはありません。
       </p>
       <p className='text-center'>
-        <Button className='mb-10 bg-gray-200 hover:bg-gray-300'>
+        <Button className='mb-16 rounded-full bg-white px-12 py-5 hover:bg-gray-200'>
           <Link href='/'>ホームに戻る</Link>
         </Button>
       </p>
