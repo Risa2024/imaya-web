@@ -45,9 +45,10 @@ export const MainHeader = () => {
         {/* モバイルサイズでのトグルメニュー */}
         {isMenuOpen && (
           <div className='z-100 absolute left-0 top-12 flex w-full flex-col gap-2 bg-white p-4 shadow-md'>
-            <Link href='/'>Home</Link>
-            <Link href='/about'>About Us</Link>
-            <Link href='/contact'>Contact</Link>
+            <Link href='/'>ホーム</Link>
+            <Link href='/#menu'>メニュー</Link>
+            <Link href='/#about'>私たちについて</Link>
+            <Link href='/#contact'>お問い合わせ</Link>
           </div>
         )}
       </div>
