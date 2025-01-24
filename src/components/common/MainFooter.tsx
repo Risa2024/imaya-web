@@ -6,7 +6,7 @@ export function MainFooter() {
       <div className='mb-6 flex flex-col items-center justify-center gap-4 text-xs md:flex-row'>
         <Link href='/'>ホーム</Link>
         <Link href='/#menu'>メニュー</Link>
-        <Link href='/#about'>私たちについて</Link>
+        <Link href='/about'>私たちについて</Link>
         <Link href='/#contact'>お問い合わせ</Link>
       </div>
       <hr className='mx-auto my-4 w-10/12 border-gray-200'></hr>

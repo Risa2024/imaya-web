@@ -48,7 +48,7 @@ export default async function WelcomePage() {
           </div>
         </Suspense>
         <div className='mb-20 bg-gray-100'>
-          <div className='mx-auto max-w-7xl'>
+          <div className='mx-4 max-w-7xl md:mx-auto'>
             <div className='md:my-20 md:flex md:flex-row md:items-center md:justify-between md:gap-20'>
               <Image
                 src='/dish.jpg'
