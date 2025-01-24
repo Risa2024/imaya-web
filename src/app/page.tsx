@@ -77,7 +77,7 @@ export default async function WelcomePage() {
           </div>
         </div>
         {/* メニュー */}
-        <div className='mb-32 flex items-center justify-center'>
+        <div id='menu' className='mb-32 flex items-center justify-center'>
           <Image src='/menu.jpg' alt='メニューの画像' width={210} height={90} className='' />
         </div>
         <div className=''>
@@ -85,7 +85,7 @@ export default async function WelcomePage() {
         </div>
 
         {/* お問い合わせ */}
-        <div className='relative mx-auto max-w-5xl px-4'>
+        <div id='contact' className='relative mx-auto max-w-5xl px-4'>
           {/* 背景画像 */}
           {/*<Image
             src='/instaglam.jpg'
