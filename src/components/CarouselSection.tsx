@@ -27,7 +27,7 @@ export function CarouselSection() {
       <CarouselContent className=''>
         <CarouselItem>
           <Image
-            src='/kitchen.jpg'
+            src='/kitchen.png'
             alt='Carousel Image 1'
             width={1200}
             height={630}
@@ -36,7 +36,7 @@ export function CarouselSection() {
         </CarouselItem>
         <CarouselItem>
           <Image
-            src='/tomato.jpg'
+            src='/tomato.png'
             alt='Carousel Image 2'
             width={1200}
             height={630}
@@ -45,7 +45,7 @@ export function CarouselSection() {
         </CarouselItem>
         <CarouselItem>
           <Image
-            src='/sosegi.jpg'
+            src='/sosegi.png'
             alt='Carousel Image 3'
             width={1200}
             height={630}
