@@ -4,7 +4,7 @@ export function MainFooter() {
   return (
     <footer className='bg-gray-50 pb-6 pt-12 text-center text-gray-500'>
       <div className='mb-6 flex flex-col items-center justify-center gap-4 text-xs md:flex-row'>
-        <Link href='/'>Home</Link>
+        <Link href='/'>ホーム</Link>
         <Link href='/#menu'>メニュー</Link>
         <Link href='/#about'>私たちについて</Link>
         <Link href='/#contact'>お問い合わせ</Link>

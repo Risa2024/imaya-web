@@ -13,7 +13,7 @@ export const MainHeader = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <header className='container z-50 mx-auto flex max-w-6xl items-center justify-between p-2'>
+    <header className='container z-50 mx-auto flex max-w-6xl items-center justify-between py-5'>
       {/* 左側の画像 */}
       <div className='flex items-center'>
         <Image
@@ -27,7 +27,7 @@ export const MainHeader = () => {
       </div>
       <div className='hidden flex-row items-center gap-4 md:flex'>
         {/* デスクトップサイズでのメニュー表示 */}
-        <Link href='/'>Home</Link>
+        <Link href='/'>ホーム</Link>
         <Link href='/#menu'>メニュー</Link>
         <Link href='/#about'>私たちについて</Link>
         <Link href='/#contact'>お問い合わせ</Link>
