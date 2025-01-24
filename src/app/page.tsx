@@ -60,11 +60,15 @@ export default async function WelcomePage() {
 
               <div className='flex flex-col items-center gap-4'>
                 <h1 className='my-8 text-2xl font-bold'>今屋のハンバーガーの歴史</h1>
-                <p className='text-lg font-medium leading-7'>
-                  今屋のハンバーガーは、今から50年前、福岡市の西公園の展望台で「今崎勝美」さんによって生まれました。
+                <p className='text-lg leading-7'>
+                  今屋のハンバーガーは、今から50年前、
+                  <br />
+                  福岡市の西公園の展望台で「今崎勝美」さんによって生まれました。
                   <br />
                   <br />
-                  ホットドックにかける熱い情熱と、平和を願う温かい人柄に惹かれ日本全国、また世界中から絶え間なくお客様が訪れます。
+                  ホットドックにかける熱い情熱と、平和を願う温かい人柄に惹かれ
+                  <br />
+                  日本全国、また世界中から絶え間なくお客様が訪れます。
                   <br />
                   <br />
                   幻のハンバーガーを味わいたいと、３時間待ちは当たり前の大人気店です。
@@ -98,7 +102,9 @@ export default async function WelcomePage() {
             className='hidden object-cover w-full md:block'
           />
           {/* スマホ版専用のテキスト */}
-          <p className='my-20 text-center text-2xl font-bold'>お問い合わせは公式Instagramから</p>
+          <p className='my-20 text-center text-xl font-bold md:text-2xl'>
+            お問い合わせは公式Instagramから
+          </p>
           <div className='my-20 flex justify-center'>
             <Link
               href='https://www.instagram.com/imayahamburger.ehime/'
