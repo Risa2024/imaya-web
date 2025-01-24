@@ -102,7 +102,7 @@ export default async function WelcomePage() {
             className='hidden object-cover w-full md:block'
           />
           {/* スマホ版専用のテキスト */}
-          <p className='my-20 text-center text-lg font-bold md:text-2xl'>
+          <p className='my-20 text-center text-base font-bold md:text-2xl'>
             お問い合わせは公式Instagramから
           </p>
           <div className='my-20 flex justify-center'>
