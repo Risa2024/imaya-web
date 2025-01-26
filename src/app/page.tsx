@@ -130,37 +130,115 @@ export default async function WelcomePage() {
         </div>
 
         {/* お問い合わせ */}
-        <div id='contact' className='relative mx-auto max-w-5xl px-4'>
-          <div className='py-12 md:flex md:items-center md:justify-between md:gap-20 md:py-20'>
-            {/* 画像セクション */}
-            <div className='md:w-1/2'>
-              <Image
-                src='/instaglam.jpg'
-                alt='お問い合わせの画像'
-                width={600}
-                height={400}
-                className='hidden rounded-lg object-cover md:block'
-              />
-            </div>
+        <div className='relative overflow-hidden'>
+          {/* グラデーション背景 */}
+          <div className='absolute inset-0 bg-gradient-to-br from-purple-100 via-pink-50 to-yellow-50'></div>
 
-            {/* テキストとボタンセクション */}
-            <div className='flex flex-col items-center md:w-1/2'>
-              {/* モバイル版テキスト */}
-              <p className='mb-8 text-center text-lg font-bold md:text-left md:text-2xl'>
-                お問い合わせは
-                <br className='md:hidden' />
-                公式Instagramから
-              </p>
+          {/* 装飾的な要素 */}
+          <div className='absolute inset-0 overflow-hidden'>
+            {/* Instagram風の円形グラデーション */}
+            <div className='absolute -left-20 top-0 h-[500px] w-[500px] rounded-full bg-gradient-to-br from-pink-200/30 to-purple-200/30 blur-3xl'></div>
+            <div className='absolute -right-20 bottom-0 h-[500px] w-[500px] rounded-full bg-gradient-to-br from-yellow-200/30 to-pink-200/30 blur-3xl'></div>
 
-              {/* Instagramボタン */}
-              <Link
-                href='https://www.instagram.com/imayahamburger.ehime/'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='inline-block w-64 transform rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 px-6 py-3 text-center font-bold text-white shadow-lg transition-transform hover:scale-105 hover:opacity-90 md:w-72 md:px-8 md:py-4 md:text-lg'
-              >
-                フォローはこちら
-              </Link>
+            {/* 装飾的なパターン */}
+            <div className='absolute left-1/4 top-1/4 h-20 w-20 rounded-full border-2 border-pink-200/20'></div>
+            <div className='absolute right-1/3 top-1/2 h-32 w-32 rounded-full border-2 border-purple-200/20'></div>
+          </div>
+
+          {/* コンテンツ */}
+          <div className='relative mx-auto max-w-7xl px-4 py-20'>
+            <div className='flex flex-col items-center'>
+              {/* デスクトップ版 */}
+              <div className='hidden md:flex md:w-full md:items-end md:justify-between'>
+                {/* 左側の画像 */}
+                <div className='flex-shrink-0'>
+                  <Image
+                    src='/follow.png'
+                    alt='フォロー'
+                    width={300}
+                    height={300}
+                    className='w-[250px] mix-blend-multiply xl:w-[300px]'
+                  />
+                </div>
+
+                {/* 中央のコンテンツ */}
+                <div className='mx-4 flex flex-col items-center'>
+                  {/* タイトルとInstagramロゴを含むコンテナ */}
+                  <div className='mb-8 flex flex-col items-center'>
+                    <p className='mb-6 text-center text-2xl font-bold tracking-wider'>
+                      今屋のハンバーガー 愛媛 公式
+                    </p>
+                    <Image
+                      src='/Instagram_logo.svg.png'
+                      alt='Instagramのロゴ'
+                      width={200}
+                      height={200}
+                      className='mb-6'
+                    />
+                    <p className='text-center text-xl font-bold tracking-wide text-gray-700'>
+                      お問い合わせはDMから
+                    </p>
+                  </div>
+
+                  {/* フォローボタン */}
+                  <Link
+                    href='https://www.instagram.com/imayahamburger.ehime/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='group relative inline-block w-72 transform'
+                  >
+                    <div className='absolute -inset-1 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 opacity-70 blur transition-all group-hover:opacity-100'></div>
+                    <div className='relative rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 px-8 py-4 text-center text-lg font-bold text-white transition-all hover:scale-105'>
+                      フォローはこちら
+                    </div>
+                  </Link>
+                </div>
+
+                {/* 右側のQRコード */}
+                <div className='flex-shrink-0'>
+                  <Image
+                    src='/qr.png'
+                    alt='QRコード'
+                    width={200}
+                    height={200}
+                    className='mix-blend-multiply'
+                  />
+                </div>
+              </div>
+
+              {/* モバイル版 */}
+              <div className='flex flex-col items-center gap-8 md:hidden'>
+                <Image
+                  src='/follow.png'
+                  alt='フォロー'
+                  width={200}
+                  height={200}
+                  className='mix-blend-multiply'
+                />
+                <p className='text-center text-lg font-bold'>
+                  お問い合わせは
+                  <br />
+                  公式Instagramから
+                </p>
+                <Link
+                  href='https://www.instagram.com/imayahamburger.ehime/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='group relative inline-block w-64 transform'
+                >
+                  <div className='absolute -inset-1 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 opacity-70 blur transition-all group-hover:opacity-100'></div>
+                  <div className='relative rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 px-6 py-3 text-center font-bold text-white transition-all hover:scale-105'>
+                    フォローはこちら
+                  </div>
+                </Link>
+                <Image
+                  src='/qr.png'
+                  alt='QRコード'
+                  width={150}
+                  height={150}
+                  className='mix-blend-multiply'
+                />
+              </div>
             </div>
           </div>
         </div>
