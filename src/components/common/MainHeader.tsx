@@ -22,7 +22,7 @@ export const MainHeader = () => {
             alt='今屋のハンバーガー'
             width={25}
             height={25}
-            className='mr-4 w-auto'
+            className='mr-4 w-auto rounded-xl'
           />
           <h1 className='text-xl font-bold md:text-3xl'>今屋のハンバーガ 愛媛</h1>
         </div>
@@ -44,7 +44,7 @@ export const MainHeader = () => {
           </button> */}
           {/* モバイルサイズでのトグルメニュー */}
           {isMenuOpen && (
-            <div className='z-100 absolute left-0 top-12 flex w-full flex-col gap-2 bg-white p-4 shadow-md'>
+            <div className='absolute left-0 top-12 z-50 flex w-full flex-col gap-2 bg-white p-4 shadow-md'>
               <Link href='/'>ホーム</Link>
               <Link href='/#menu'>メニュー</Link>
               <Link href='/about'>私たちについて</Link>

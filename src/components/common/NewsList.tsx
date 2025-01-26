@@ -21,7 +21,7 @@ export const NewsList = ({ news }: Props) => {
         {news.map((item) => (
           <div
             key={item.id}
-            className='transform rounded-lg border border-gray-100 bg-white p-6 shadow-sm transition-all hover:shadow-md md:p-8'
+            className='transform rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-all hover:shadow-md md:p-8'
           >
             <div className='mb-3'>
               <p className='text-xs text-muted-foreground md:text-sm'>

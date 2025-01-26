@@ -47,7 +47,7 @@ export default async function WelcomePage() {
             <NewsList news={newsList} />
           </div>
         </Suspense>
-        <div className='mb-20 bg-white shadow-inherit'>
+        <div className='mb-20 bg-gradient-to-br from-white via-orange-50/10 to-white shadow-sm'>
           <div className='mx-4 max-w-7xl md:mx-auto'>
             <div className='md:my-20 md:flex md:flex-row md:items-center md:justify-center md:gap-20'>
               {/* モバイル版 */}
@@ -137,7 +137,7 @@ export default async function WelcomePage() {
         </div>
 
         {/* メニュー */}
-        <div className='mb-20 bg-amber-50'>
+        <div className='mb-20'>
           <MenuList />
         </div>
 
