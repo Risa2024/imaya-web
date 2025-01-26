@@ -52,17 +52,17 @@ export default async function WelcomePage() {
             <div className='md:my-20 md:flex md:flex-row md:items-center md:justify-center md:gap-20'>
               {/* モバイル版 */}
               <div className='flex flex-col items-center py-8 md:hidden'>
-                <div className='w-full'>
-                  <Image
-                    src='/dish.jpg'
-                    alt='料理の画像'
-                    width={400}
-                    height={400}
-                    className='mx-auto rounded-lg'
-                  />
-                </div>
                 <div className='flex flex-col items-center gap-4 px-4'>
                   <h1 className='my-8 text-2xl font-bold'>今屋のハンバーガーの歴史</h1>
+                  <div className='w-full'>
+                    <Image
+                      src='/dish.jpg'
+                      alt='料理の画像'
+                      width={400}
+                      height={400}
+                      className='mx-auto rounded-lg'
+                    />
+                  </div>
                   <p className='mb-8 text-center text-sm leading-7'>
                     今屋のハンバーガーは、今から50年前、福岡市の西公園の展望台で
                     「今崎勝美」さんによって生まれました。
