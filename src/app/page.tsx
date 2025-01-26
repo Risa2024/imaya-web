@@ -50,20 +50,51 @@ export default async function WelcomePage() {
         <div className='mb-20 bg-gray-100'>
           <div className='mx-4 max-w-7xl md:mx-auto'>
             <div className='md:my-20 md:flex md:flex-row md:items-center md:justify-between md:gap-20'>
-              <Image
-                src='/dish.jpg'
-                alt='料理の画像'
-                width={400}
-                height={400}
-                className='hidden md:block'
-              />
+              {/* モバイル版 */}
+              <div className='flex flex-col items-center gap-4 px-4 py-8 md:hidden'>
+                <h1 className='mb-4 text-center text-xl font-bold'>今屋のハンバーガーの歴史</h1>
+                <Image
+                  src='/dish.jpg'
+                  alt='料理の画像'
+                  width={300}
+                  height={300}
+                  className='mb-6 rounded-lg md:hidden'
+                />
+                <p className='text-center text-sm leading-loose'>
+                  今屋のハンバーガーは、今から50年前
+                  <br />
+                  福岡市の西公園の展望台で
+                  <br />
+                  「今崎勝美」さんによって生まれました。
+                  <br />
+                  <br />
+                  ホットドックにかける熱い情熱と
+                  <br />
+                  平和を願う温かい人柄に惹かれ
+                  <br />
+                  日本全国、また世界中から
+                  <br />
+                  絶え間なくお客様が訪れます。
+                  <br />
+                  <br />
+                  幻のハンバーガーを味わいたいと
+                  <br />
+                  ３時間待ちは当たり前の大人気店です。
+                </p>
+                <div className='mt-8'>
+                  <Button className='rounded-full bg-white px-10 py-4 text-sm hover:bg-gray-200'>
+                    <Link href='/about'>詳細を見る</Link>
+                  </Button>
+                </div>
+              </div>
 
-              <div className='flex flex-col items-center gap-4'>
+              {/* デスクトップ版 */}
+              <div className='hidden flex-col items-center gap-4 md:flex'>
                 <h1 className='my-8 text-2xl font-bold'>今屋のハンバーガーの歴史</h1>
                 <p className='text-lg leading-7'>
-                  今屋のハンバーガーは、今から50年前、
+                  今屋のハンバーガーは、今から50年前、福岡市の西公園の展望台で
                   <br />
-                  福岡市の西公園の展望台で「今崎勝美」さんによって生まれました。
+                  「今崎勝美」さんによって生まれました。
                   <br />
                   <br />
                   ホットドックにかける熱い情熱と、平和を願う温かい人柄に惹かれ
