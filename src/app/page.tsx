@@ -51,41 +51,45 @@ export default async function WelcomePage() {
           <div className='mx-4 max-w-7xl md:mx-auto'>
             <div className='md:my-20 md:flex md:flex-row md:items-center md:justify-center md:gap-20'>
               {/* モバイル版 */}
-              <div className='flex flex-col items-center gap-4 px-4 py-8 md:hidden'>
-                <h1 className='mb-4 text-center text-xl font-bold'>今屋のハンバーガーの歴史</h1>
-                <Image
-                  src='/dish.jpg'
-                  alt='料理の画像'
-                  width={300}
-                  height={300}
-                  className='mb-6 rounded-lg'
-                />
-                <p className='text-center text-sm leading-loose'>
-                  今屋のハンバーガーは、今から50年前
-                  <br />
-                  福岡市の西公園の展望台で
-                  <br />
-                  「今崎勝美」さんによって生まれました。
-                  <br />
-                  <br />
-                  ホットドックにかける熱い情熱と
-                  <br />
-                  平和を願う温かい人柄に惹かれ
-                  <br />
-                  日本全国、また世界中から
-                  <br />
-                  絶え間なくお客様が訪れます。
-                  <br />
-                  <br />
-                  幻のハンバーガーを味わいたいと
-                  <br />
-                  ３時間待ちは当たり前の大人気店です。
-                </p>
-                <div className='mt-8'>
-                  <Button className='rounded-full bg-white px-10 py-4 text-sm hover:bg-gray-200'>
-                    <Link href='/about'>詳細を見る</Link>
-                  </Button>
+              <div className='flex flex-col items-center gap-10 py-8 md:hidden'>
+                {/* タイトルとInstagramロゴ */}
+                <div className='flex flex-col items-center'>
+                  <p className='mb-6 text-center text-xl font-bold tracking-wider'>
+                    今屋のハンバーガー 愛媛 公式
+                  </p>
+                  <Image
+                    src='/Instagram_logo.svg.png'
+                    alt='Instagramのロゴ'
+                    width={250}
+                    height={250}
+                    className='mb-4'
+                  />
+                  <p className='text-center text-lg font-bold tracking-wide text-gray-700'>
+                    お問い合わせはDMから
+                  </p>
                 </div>
+
+                {/* QRコード */}
+                <Image
+                  src='/qr.png'
+                  alt='QRコード'
+                  width={180}
+                  height={180}
+                  className='mix-blend-multiply'
+                />
+
+                {/* フォローボタン */}
+                <Link
+                  href='https://www.instagram.com/imayahamburger.ehime/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='group relative inline-block w-64 transform'
+                >
+                  <div className='absolute -inset-1 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 opacity-70 blur transition-all group-hover:opacity-100'></div>
+                  <div className='relative rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 px-6 py-3 text-center font-bold text-white transition-all hover:scale-105'>
+                    フォローはこちら
+                  </div>
+                </Link>
               </div>
 
               {/* デスクトップ版 */}
@@ -196,19 +200,34 @@ export default async function WelcomePage() {
               </div>
 
               {/* モバイル版 */}
-              <div className='flex flex-col items-center gap-8 md:hidden'>
+              <div className='flex flex-col items-center gap-10 py-8 md:hidden'>
+                {/* タイトルとInstagramロゴ */}
+                <div className='flex flex-col items-center'>
+                  <p className='mb-6 text-center text-xl font-bold tracking-wider'>
+                    今屋のハンバーガー 愛媛 公式
+                  </p>
+                  <Image
+                    src='/Instagram_logo.svg.png'
+                    alt='Instagramのロゴ'
+                    width={250}
+                    height={250}
+                    className='mb-4'
+                  />
+                  <p className='text-center text-lg font-bold tracking-wide text-gray-700'>
+                    お問い合わせはDMから
+                  </p>
+                </div>
+
+                {/* QRコード */}
                 <Image
-                  src='/follow.png'
-                  alt='フォロー'
-                  width={200}
-                  height={200}
+                  src='/qr.png'
+                  alt='QRコード'
+                  width={180}
+                  height={180}
                   className='mix-blend-multiply'
                 />
-                <p className='text-center text-lg font-bold'>
-                  お問い合わせは
-                  <br />
-                  公式Instagramから
-                </p>
+
+                {/* フォローボタン */}
                 <Link
                   href='https://www.instagram.com/imayahamburger.ehime/'
                   target='_blank'
@@ -220,13 +239,6 @@ export default async function WelcomePage() {
                     フォローはこちら
                   </div>
                 </Link>
-                <Image
-                  src='/qr.png'
-                  alt='QRコード'
-                  width={150}
-                  height={150}
-                  className='mix-blend-multiply'
-                />
               </div>
             </div>
           </div>
