@@ -8,58 +8,62 @@ export default async function AboutPage() {
       {/* <h1 className='mb-8 text-base font-medium bg-green-50 p-4 md:text-center'>About Us</h1> */}
       <h2 className='mb-2 text-2xl font-bold'>
         <br />
-        <span className='border-b-2 border-gray-300 pb-1'>
-          今屋のハンバーガー 愛媛をはじめた想い
-        </span>
-        <br />
+        <span>今屋のハンバーガー 愛媛をはじめた想い</span>
+        <hr className='my-2 border-gray-300' />
       </h2>
       <p className='mb-5 pb-5 tracking-widest'>
         <br />
         「いっぱいキャベツ入れてあげてよ。」
         <br />
         <br />
-        コッペパンにぎっしり詰めた、キャベツの挽肉炒めと無添加の手作りハンバーグやソーセージ。
+        コッペパンにぎっしり詰めた、キャベツの挽肉炒めと
         <br />
         <br />
-        体に優しい食材で栄養バランスを考えたこの一品には、「お腹いっぱい食べてほしい」という
+        無添加の手作りハンバーグやソーセージ。
+        <br />
+        <br />
+        体に優しい食材で栄養バランスを考えたこの一品には
+        <br />
+        <br />
+        「お腹いっぱい食べてほしい」という
         <br />
         <br />
         私たちの想いが込められています。
       </p>
 
       <h2 className='mb-2 text-2xl font-bold'>
-        <span className='border-b-2 border-gray-300 pb-1'>小さなキッチンカーに込めた夢</span>
+        <span>小さなキッチンカーに込めた夢</span>
+        <hr className='my-2 border-gray-300' />
       </h2>
       <p className='mb-5 pb-5'>
         <br />
         私は小さなキッチンカーを作りました。
         <br />
         <br />
-        それは、私の故郷の愛媛県を拠点に移動式子ども食堂として、「今屋の味」と「想い」を
+        それは、私の故郷の愛媛県を拠点に移動式子ども食堂として、
         <br />
         <br />
-        たくさんの人に届けたいという夢を実現するためです。
+        「今屋の味」と「想い」をたくさんの人に届けたいという夢を実現するためです。
         <br />
         <br />
-        教会で子ども食堂やフードパントリーのボランティア活動をする中で、食事に困り、
+        教会で子ども食堂やフードパントリーのボランティア活動をする中で
         <br />
         <br />
-        救いを求める人たちが多くいる現実を知りました。
+        食事に困り、救いを求める人たちが多くいる現実を知りました。
         <br />
         <br />
-        そして、大病を経験した私自身が、安心で安全な食の大切さを痛感しました。
+        そして大病を経験した私自身が、安心で安全な食の大切さを痛感しました。
         <br />
         <br />
-        健康を支える食事が、人の心を豊かにすることを、身をもって感じたのです。
+        健康を支える食事が、人の心を豊かにすることを身をもって感じたのです。
       </p>
       <div className='mb-8'>
         <Image src='/about.png' alt='木漏れ日' width={1200} height={630} />
       </div>
 
       <h2 className='mb-2 text-2xl font-bold'>
-        <span className='border-b-2 border-gray-300 pb-1'>
-          奇跡的に与えられた時間を誰かのために
-        </span>
+        <span>奇跡的に与えられた時間を誰かのために</span>
+        <hr className='my-2 border-gray-300' />
       </h2>
       <br />
       <p className='mb-5 pb-5'>
