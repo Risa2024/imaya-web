@@ -15,7 +15,7 @@ export const MainHeader = () => {
   return (
     <header className='container z-50 mx-auto flex max-w-6xl items-center justify-between py-5'>
       {/* 左側の画像 */}
-      <div className='flex items-center'>
+      <div className='items-cente ml-3 flex'>
         <Image
           src='/imaya.jpg'
           alt='今屋のハンバーガー'
@@ -33,8 +33,7 @@ export const MainHeader = () => {
         <Link href='/#contact'>お問い合わせ</Link>
       </div>
       {/* モバイルサイズでのメニューボタン */}
-      <div className='lg:hidden'>
-        {/*{isMenuOpen ? 'true' : 'false'}*/}
+      <div className='mr-3 lg:hidden'>
         <Button variant='default' size='icon' onClick={toggleMenu}>
           <Menu />
           {/*メニュータグを置く*/}
