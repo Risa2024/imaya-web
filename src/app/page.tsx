@@ -40,14 +40,14 @@ export default async function WelcomePage() {
 
   return (
     <>
-      <div className='flex flex-col'>
+      <div className='flex flex-col bg-orange-50'>
         <CarouselSection />
         <Suspense fallback={<div>Loading...</div>}>
           <div className='mx-auto my-10 mb-20 max-w-7xl'>
             <NewsList news={newsList} />
           </div>
         </Suspense>
-        <div className='mb-20 bg-gray-100 shadow-md'>
+        <div className='mb-20 bg-white shadow-inherit'>
           <div className='mx-4 max-w-7xl md:mx-auto'>
             <div className='md:my-20 md:flex md:flex-row md:items-center md:justify-center md:gap-20'>
               {/* モバイル版 */}
@@ -65,7 +65,7 @@ export default async function WelcomePage() {
                     alt='料理の画像'
                     width={400}
                     height={400}
-                    className='mx-auto rounded-lg shadow-xl hover:shadow-2xl'
+                    className='mx-auto rounded-2xl shadow-xl hover:shadow-2xl'
                   />
                 </div>
 
@@ -106,7 +106,7 @@ export default async function WelcomePage() {
                     alt='料理の画像'
                     width={400}
                     height={400}
-                    className='rounded-lg shadow-xl hover:shadow-2xl'
+                    className='rounded-2xl shadow-xl hover:shadow-2xl'
                   />
                 </div>
                 <div className='flex w-[500px] flex-col items-center gap-4'>
@@ -137,14 +137,14 @@ export default async function WelcomePage() {
         </div>
 
         {/* メニュー */}
-        <div className='mb-20'>
+        <div className='mb-20 bg-amber-50'>
           <MenuList />
         </div>
 
         {/* お問い合わせ */}
         <div className='relative overflow-hidden'>
           {/* グラデーション背景 */}
-          <div className='absolute inset-0 bg-gradient-to-br from-purple-100 via-pink-50 to-yellow-50'></div>
+          <div className='absolute inset-0 bg-gradient-to-br from-fuchsia-100 via-pink-50 to-purple-50 opacity-85'></div>
 
           {/* コンテンツ */}
           <div className='relative mx-auto max-w-7xl px-4 py-16 sm:py-20 md:py-24'>

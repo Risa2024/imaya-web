@@ -13,7 +13,7 @@ export const MainHeader = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <header className='bg-slate-100'>
+    <header className='bg-orange-50'>
       <div className='z-50 mx-auto flex max-w-6xl items-center justify-between py-5'>
         {/* 左側の画像 */}
         <div className='items-cente ml-3 flex'>

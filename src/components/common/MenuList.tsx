@@ -15,7 +15,7 @@ export const MenuList = () => {
           alt='メニューの画像'
           width={210}
           height={90}
-          className='hover:scale-105'
+          className='mix-blend-multiply transition-all hover:scale-105'
         />
       </div>
       {/* メニューグリッド */}
