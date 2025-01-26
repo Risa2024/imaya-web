@@ -134,45 +134,34 @@ export default async function WelcomePage() {
           {/* グラデーション背景 */}
           <div className='absolute inset-0 bg-gradient-to-br from-purple-100 via-pink-50 to-yellow-50'></div>
 
-          {/* 装飾的な要素 */}
-          <div className='absolute inset-0 overflow-hidden'>
-            {/* Instagram風の円形グラデーション */}
-            <div className='absolute -left-20 top-0 h-[500px] w-[500px] rounded-full bg-gradient-to-br from-pink-200/30 to-purple-200/30 blur-3xl'></div>
-            <div className='absolute -right-20 bottom-0 h-[500px] w-[500px] rounded-full bg-gradient-to-br from-yellow-200/30 to-pink-200/30 blur-3xl'></div>
-
-            {/* 装飾的なパターン */}
-            <div className='absolute left-1/4 top-1/4 h-20 w-20 rounded-full border-2 border-pink-200/20'></div>
-            <div className='absolute right-1/3 top-1/2 h-32 w-32 rounded-full border-2 border-purple-200/20'></div>
-          </div>
-
           {/* コンテンツ */}
           <div className='relative mx-auto max-w-7xl px-4 py-20'>
             <div className='flex flex-col items-center'>
               {/* デスクトップ版 */}
               <div className='hidden md:flex md:w-full md:items-end md:justify-between'>
                 {/* 左側の画像 */}
-                <div className='flex-shrink-0'>
+                <div className='ml-8 flex-shrink-0'>
                   <Image
                     src='/follow.png'
                     alt='フォロー'
-                    width={300}
-                    height={300}
-                    className='w-[250px] mix-blend-multiply xl:w-[300px]'
+                    width={400}
+                    height={400}
+                    className='w-[300px] mix-blend-multiply xl:w-[350px]'
                   />
                 </div>
 
                 {/* 中央のコンテンツ */}
-                <div className='mx-4 flex flex-col items-center'>
+                <div className='-ml-10 flex flex-col items-center'>
                   {/* タイトルとInstagramロゴを含むコンテナ */}
-                  <div className='mb-8 flex flex-col items-center'>
+                  <div className='mb-12 flex flex-col items-center'>
                     <p className='mb-6 text-center text-2xl font-bold tracking-wider'>
                       今屋のハンバーガー 愛媛 公式
                     </p>
                     <Image
                       src='/Instagram_logo.svg.png'
                       alt='Instagramのロゴ'
-                      width={200}
-                      height={200}
+                      width={350}
+                      height={350}
                       className='mb-6'
                     />
                     <p className='text-center text-xl font-bold tracking-wide text-gray-700'>
@@ -195,7 +184,7 @@ export default async function WelcomePage() {
                 </div>
 
                 {/* 右側のQRコード */}
-                <div className='flex-shrink-0'>
+                <div className='mr-8 flex-shrink-0'>
                   <Image
                     src='/qr.png'
                     alt='QRコード'
