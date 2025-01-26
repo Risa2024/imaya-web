@@ -15,7 +15,7 @@ export const MenuList = () => {
       {/* メニューグリッド */}
       <div className='mx-auto grid max-w-7xl grid-cols-2 gap-3 md:grid-cols-3 md:gap-6 lg:grid-cols-4'>
         {/* メニューアイテム */}
-        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-sm transition-shadow duration-300 hover:shadow-md md:p-4'>
+        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-md transition-shadow duration-300 hover:shadow-md md:p-4'>
           <div className='relative aspect-square w-full'>
             <Image src='/mixegg.jpg' alt='ミックスエッグ' fill className='object-contain' />
           </div>
@@ -26,7 +26,7 @@ export const MenuList = () => {
           </div>
         </div>
 
-        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-sm transition-shadow duration-300 hover:shadow-md md:p-4'>
+        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-md transition-shadow duration-300 hover:shadow-md md:p-4'>
           <div className='relative aspect-square w-full'>
             <Image src='/mixedCheese.jpg' alt='ミックスチーズ' fill className='object-contain' />
           </div>
@@ -37,7 +37,7 @@ export const MenuList = () => {
           </div>
         </div>
 
-        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-sm transition-shadow duration-300 hover:shadow-md md:p-4'>
+        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-md transition-shadow duration-300 hover:shadow-md md:p-4'>
           <div className='relative aspect-square w-full'>
             <Image
               src='/FrankEggC.jpg'
@@ -53,7 +53,7 @@ export const MenuList = () => {
           </div>
         </div>
 
-        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-sm transition-shadow duration-300 hover:shadow-md md:p-4'>
+        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-md transition-shadow duration-300 hover:shadow-md md:p-4'>
           <div className='relative aspect-square w-full'>
             <Image
               src='/TomatoRetasBurger.jpg'
@@ -69,7 +69,7 @@ export const MenuList = () => {
           </div>
         </div>
 
-        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-sm transition-shadow duration-300 hover:shadow-md md:p-4'>
+        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-md transition-shadow duration-300 hover:shadow-md md:p-4'>
           <div className='relative aspect-square w-full'>
             <Image
               src='/EggBurgerChees.jpg'
@@ -85,7 +85,7 @@ export const MenuList = () => {
           </div>
         </div>
 
-        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-sm transition-shadow duration-300 hover:shadow-md md:p-4'>
+        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-md transition-shadow duration-300 hover:shadow-md md:p-4'>
           <div className='relative aspect-square w-full'>
             <Image src='/CheesBurger.jpg' alt='チーズバーガー' fill className='object-contain' />
           </div>
@@ -96,7 +96,7 @@ export const MenuList = () => {
           </div>
         </div>
 
-        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-sm transition-shadow duration-300 hover:shadow-md md:p-4'>
+        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-md transition-shadow duration-300 hover:shadow-md md:p-4'>
           <div className='relative aspect-square w-full'>
             <Image src='/MixBurger.jpg' alt='ミックスバーガー' fill className='object-contain' />
           </div>
@@ -107,7 +107,7 @@ export const MenuList = () => {
           </div>
         </div>
 
-        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-sm transition-shadow duration-300 hover:shadow-md md:p-4'>
+        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-md transition-shadow duration-300 hover:shadow-md md:p-4'>
           <div className='relative aspect-square w-full'>
             <Image src='/hamburger.jpg' alt='ハンバーガー' fill className='object-contain' />
           </div>
@@ -118,7 +118,7 @@ export const MenuList = () => {
           </div>
         </div>
 
-        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-sm transition-shadow duration-300 hover:shadow-md md:p-4'>
+        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-md transition-shadow duration-300 hover:shadow-md md:p-4'>
           <div className='relative aspect-square w-full'>
             <Image src='/FrankDog.jpg' alt='フランクドッグ' fill className='object-contain' />
           </div>
@@ -129,7 +129,7 @@ export const MenuList = () => {
           </div>
         </div>
 
-        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-sm transition-shadow duration-300 hover:shadow-md md:p-4'>
+        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-md transition-shadow duration-300 hover:shadow-md md:p-4'>
           <div className='relative aspect-square w-full'>
             <Image
               src='/100hokaido.jpg'
@@ -147,7 +147,7 @@ export const MenuList = () => {
           </div>
         </div>
 
-        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-sm transition-shadow duration-300 hover:shadow-md md:p-4'>
+        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-md transition-shadow duration-300 hover:shadow-md md:p-4'>
           <div className='relative aspect-square w-full'>
             <Image src='/EggWiener.jpg' alt='エッグウインナー' fill className='object-contain' />
           </div>
@@ -158,7 +158,7 @@ export const MenuList = () => {
           </div>
         </div>
 
-        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-sm transition-shadow duration-300 hover:shadow-md md:p-4'>
+        <div className='overflow-hidden rounded-lg bg-white p-2 shadow-md transition-shadow duration-300 hover:shadow-md md:p-4'>
           <div className='relative aspect-square w-full'>
             <Image src='/WienerSand.jpg' alt='ウインナーサンド' fill className='object-contain' />
           </div>
