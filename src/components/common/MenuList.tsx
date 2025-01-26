@@ -6,8 +6,10 @@ export const MenuList = () => {
   return (
     <div className='mx-auto max-w-7xl px-4'>
       {/* メニューヘッダー */}
-      <h2 className='mb-2 text-center text-sm font-medium text-muted-foreground'>menu</h2>
-      <div id='menu' className='mb-8 flex items-center justify-center'>
+      <h2 id='menu' className='mb-2 text-center text-sm font-medium text-muted-foreground'>
+        menu
+      </h2>
+      <div className='mb-8 flex items-center justify-center'>
         <Image src='/menu.png' alt='メニューの画像' width={210} height={90} className='' />
       </div>
       {/* メニューグリッド */}
