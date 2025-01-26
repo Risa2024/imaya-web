@@ -51,45 +51,35 @@ export default async function WelcomePage() {
           <div className='mx-4 max-w-7xl md:mx-auto'>
             <div className='md:my-20 md:flex md:flex-row md:items-center md:justify-center md:gap-20'>
               {/* モバイル版 */}
-              <div className='flex flex-col items-center gap-10 py-8 md:hidden'>
-                {/* タイトルとInstagramロゴ */}
-                <div className='flex flex-col items-center'>
-                  <p className='mb-6 text-center text-xl font-bold tracking-wider'>
-                    今屋のハンバーガー 愛媛 公式
-                  </p>
+              <div className='flex flex-col items-center py-8 md:hidden'>
+                <div className='w-full'>
                   <Image
-                    src='/Instagram_logo.svg.png'
-                    alt='Instagramのロゴ'
-                    width={250}
-                    height={250}
-                    className='mb-4'
+                    src='/dish.jpg'
+                    alt='料理の画像'
+                    width={400}
+                    height={400}
+                    className='mx-auto rounded-lg'
                   />
-                  <p className='text-center text-lg font-bold tracking-wide text-gray-700'>
-                    お問い合わせはDMから
-                  </p>
                 </div>
-
-                {/* QRコード */}
-                <Image
-                  src='/qr.png'
-                  alt='QRコード'
-                  width={180}
-                  height={180}
-                  className='mix-blend-multiply'
-                />
-
-                {/* フォローボタン */}
-                <Link
-                  href='https://www.instagram.com/imayahamburger.ehime/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='group relative inline-block w-64 transform'
-                >
-                  <div className='absolute -inset-1 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 opacity-70 blur transition-all group-hover:opacity-100'></div>
-                  <div className='relative rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 px-6 py-3 text-center font-bold text-white transition-all hover:scale-105'>
-                    フォローはこちら
+                <div className='flex flex-col items-center gap-4 px-4'>
+                  <h1 className='my-8 text-2xl font-bold'>今屋のハンバーガーの歴史</h1>
+                  <p className='mb-8 text-center text-sm leading-7'>
+                    今屋のハンバーガーは、今から50年前、福岡市の西公園の展望台で
+                    「今崎勝美」さんによって生まれました。
+                    <br />
+                    <br />
+                    ホットドックにかける熱い情熱と、平和を願う温かい人柄に惹かれ
+                    日本全国、また世界中から絶え間なくお客様が訪れます。
+                    <br />
+                    <br />
+                    幻のハンバーガーを味わいたいと、３時間待ちは当たり前の大人気店です。
+                  </p>
+                  <div>
+                    <Button className='mb-8 rounded-full bg-white px-12 py-5 hover:bg-gray-200'>
+                      <Link href='/about'>詳細を見る</Link>
+                    </Button>
                   </div>
-                </Link>
+                </div>
               </div>
 
               {/* デスクトップ版 */}
@@ -129,7 +119,7 @@ export default async function WelcomePage() {
           </div>
         </div>
         {/* メニュー */}
-        <div className=''>
+        <div className='mb-20'>
           <MenuList />
         </div>
 
@@ -144,12 +134,12 @@ export default async function WelcomePage() {
               {/* デスクトップ版 */}
               <div className='hidden md:flex md:w-full md:items-end md:justify-between'>
                 {/* 左側の画像 */}
-                <div className='ml-8 flex-shrink-0'>
+                <div className='flex-shrink-0'>
                   <Image
                     src='/follow.png'
                     alt='フォロー'
-                    width={400}
-                    height={400}
+                    width={450}
+                    height={450}
                     className='w-[300px] mix-blend-multiply xl:w-[350px]'
                   />
                 </div>
@@ -157,8 +147,8 @@ export default async function WelcomePage() {
                 {/* 中央のコンテンツ */}
                 <div className='-ml-10 flex flex-col items-center'>
                   {/* タイトルとInstagramロゴを含むコンテナ */}
-                  <div className='mb-12 flex flex-col items-center'>
-                    <p className='mb-6 text-center text-2xl font-bold tracking-wider'>
+                  <div className='mb-4 flex flex-col items-center'>
+                    <p className='mb-1 text-center text-2xl font-bold tracking-wider'>
                       今屋のハンバーガー 愛媛 公式
                     </p>
                     <Image
@@ -166,7 +156,7 @@ export default async function WelcomePage() {
                       alt='Instagramのロゴ'
                       width={350}
                       height={350}
-                      className='mb-6'
+                      className='mb-2'
                     />
                     <p className='text-center text-xl font-bold tracking-wide text-gray-700'>
                       お問い合わせはDMから
@@ -200,10 +190,10 @@ export default async function WelcomePage() {
               </div>
 
               {/* モバイル版 */}
-              <div className='flex flex-col items-center gap-10 py-8 md:hidden'>
+              <div className='flex flex-col items-center gap-10 py-3 md:hidden'>
                 {/* タイトルとInstagramロゴ */}
                 <div className='flex flex-col items-center'>
-                  <p className='mb-6 text-center text-xl font-bold tracking-wider'>
+                  <p className='mb-1 text-center text-xl font-bold tracking-wider'>
                     今屋のハンバーガー 愛媛 公式
                   </p>
                   <Image
