@@ -127,7 +127,7 @@ export default async function WelcomePage() {
                     <br />
                     幻のハンバーガーを味わいたいと、３時間待ちは当たり前の大人気店です。
                   </p>
-                  <Button className='rounded-full bg-gray-900 px-12 py-5 text-white transition-all hover:scale-105 hover:bg-gray-800'>
+                  <Button className='mt-4 rounded-full bg-gray-900 px-10 py-4 text-sm text-white transition-all hover:scale-105 hover:bg-gray-600 sm:px-12 sm:py-5 sm:text-base'>
                     <Link href='/about'>今屋のハンバーガー愛媛とは</Link>
                   </Button>
                 </div>
@@ -152,7 +152,7 @@ export default async function WelcomePage() {
               {/* デスクトップ版 */}
               <div className='hidden md:flex md:w-full md:items-end md:justify-between'>
                 {/* 左側の画像 */}
-                <div className='mb-4 flex-shrink-0 self-end pl-8'>
+                <div className='mb-4 self-end'>
                   <Image
                     src='/follow.png'
                     alt='フォロー'
@@ -163,9 +163,9 @@ export default async function WelcomePage() {
                 </div>
 
                 {/* 中央のコンテンツ */}
-                <div className='flex flex-col items-center'>
+                <div className='mr-28 flex flex-col items-center justify-center'>
                   {/* タイトルとInstagramロゴを含むコンテナ */}
-                  <div className='mb-8 flex flex-col items-center'>
+                  <div className='mb-8 flex flex-col items-center justify-center'>
                     <p className='mb-4 text-center text-2xl font-bold tracking-wider lg:text-3xl'>
                       今屋のハンバーガー 愛媛 公式
                     </p>
@@ -186,7 +186,7 @@ export default async function WelcomePage() {
                     href='https://www.instagram.com/imayahamburger.ehime/'
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='group relative inline-block w-80 transform lg:w-96'
+                    className='w-80 transform lg:w-96'
                   >
                     <div className='absolute -inset-1 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 opacity-70 blur transition-all group-hover:opacity-100'></div>
                     <div className='relative rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 px-8 py-4 text-center text-lg font-bold text-white transition-all hover:scale-105 lg:px-10 lg:py-5 lg:text-xl'>

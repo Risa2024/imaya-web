@@ -10,7 +10,7 @@ type Props = {
 
 export const NewsList = ({ news }: Props) => {
   return (
-    <div className='mx-auto w-full px-4 py-2 md:py-20'>
+    <div className='mt-md:py-20 mx-auto w-full px-4'>
       <div className='mb-12 text-center'>
         <h2 className='mb-2 text-sm font-medium text-muted-foreground'>News</h2>
         <h1 className='text-xl font-bold md:text-3xl'>お知らせ</h1>
