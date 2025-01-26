@@ -53,7 +53,7 @@ export default async function WelcomePage() {
               {/* モバイル版 */}
               <div className='flex flex-col items-center py-8 md:hidden'>
                 <div className='flex flex-col items-center gap-4 px-4'>
-                  <h1 className='my-8 text-2xl font-bold'>今屋のハンバーガーの歴史</h1>
+                  <h1 className='my-8 text-xl font-bold'>今屋のハンバーガーの歴史</h1>
                   <div className='w-full'>
                     <Image
                       src='/dish.jpg'
