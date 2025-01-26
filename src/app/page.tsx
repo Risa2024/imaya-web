@@ -125,10 +125,6 @@ export default async function WelcomePage() {
           </div>
         </div>
         {/* メニュー */}
-        <h2 className='mb-2 text-center text-sm font-medium text-muted-foreground'>menu</h2>
-        <div id='menu' className='mb-20 flex items-center justify-center'>
-          <Image src='/menu.jpg' alt='メニューの画像' width={210} height={90} className='' />
-        </div>
         <div className=''>
           <MenuList />
         </div>
