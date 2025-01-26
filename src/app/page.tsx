@@ -95,12 +95,10 @@ export default async function WelcomePage() {
                   <h1 className='my-8 text-2xl font-bold'>今屋のハンバーガーの歴史</h1>
                   <p className='mb-8 text-lg leading-7'>
                     今屋のハンバーガーは、今から50年前、福岡市の西公園の展望台で
-                    <br />
                     「今崎勝美」さんによって生まれました。
                     <br />
                     <br />
                     ホットドックにかける熱い情熱と、平和を願う温かい人柄に惹かれ
-                    <br />
                     日本全国、また世界中から絶え間なくお客様が訪れます。
                     <br />
                     <br />
@@ -122,7 +120,7 @@ export default async function WelcomePage() {
         </div>
 
         {/* お問い合わせ */}
-        <div className='relative overflow-hidden'>
+        <div id='contact' className='relative overflow-hidden'>
           {/* グラデーション背景 */}
           <div className='absolute inset-0 bg-gradient-to-br from-purple-100 via-pink-50 to-yellow-50'></div>
 
