@@ -10,7 +10,13 @@ export const MenuList = () => {
         menu
       </h2>
       <div className='mb-8 flex items-center justify-center'>
-        <Image src='/menu.png' alt='メニューの画像' width={210} height={90} className='' />
+        <Image
+          src='/menu.png'
+          alt='メニューの画像'
+          width={210}
+          height={90}
+          className='hover:scale-105'
+        />
       </div>
       {/* メニューグリッド */}
       <div className='mx-auto grid max-w-7xl grid-cols-2 gap-3 md:grid-cols-3 md:gap-6 lg:grid-cols-4'>

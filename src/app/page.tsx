@@ -65,7 +65,7 @@ export default async function WelcomePage() {
                     alt='料理の画像'
                     width={400}
                     height={400}
-                    className='mx-auto rounded-lg shadow-xl'
+                    className='mx-auto rounded-lg shadow-xl hover:shadow-2xl'
                   />
                 </div>
 
@@ -92,7 +92,7 @@ export default async function WelcomePage() {
                     <br />
                     ３時間待ちは当たり前の大人気店です。
                   </p>
-                  <Button className='mt-4 rounded-full bg-white px-10 py-4 text-sm hover:bg-gray-200 sm:px-12 sm:py-5 sm:text-base'>
+                  <Button className='mt-4 rounded-full bg-gray-900 px-10 py-4 text-sm text-white transition-all hover:scale-105 hover:bg-gray-600 sm:px-12 sm:py-5 sm:text-base'>
                     <Link href='/about'>今屋のハンバーガー愛媛とは</Link>
                   </Button>
                 </div>
@@ -106,7 +106,7 @@ export default async function WelcomePage() {
                     alt='料理の画像'
                     width={400}
                     height={400}
-                    className='rounded-lg shadow-xl'
+                    className='rounded-lg shadow-xl hover:shadow-2xl'
                   />
                 </div>
                 <div className='flex w-[500px] flex-col items-center gap-4'>
@@ -127,7 +127,7 @@ export default async function WelcomePage() {
                     <br />
                     幻のハンバーガーを味わいたいと、３時間待ちは当たり前の大人気店です。
                   </p>
-                  <Button className='rounded-full bg-white px-12 py-5 hover:bg-gray-200'>
+                  <Button className='rounded-full bg-gray-900 px-12 py-5 text-white transition-all hover:scale-105 hover:bg-gray-800'>
                     <Link href='/about'>今屋のハンバーガー愛媛とは</Link>
                   </Button>
                 </div>
