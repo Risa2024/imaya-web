@@ -13,8 +13,9 @@ const notoSansJP = Noto_Sans_JP({
 
 export const dynamic = 'force-dynamic';
 export const metadata: Metadata = {
-  title: 'imaya..',
-  description: 'imaya is a shop in Ehime specializing in handmade kitchen car .',
+  title: '今屋のハンバーガー 愛媛',
+  description:
+    '今から50年前、福岡市の西公園展望台で誕生した“幻のハンバーガー”が、愛媛でキッチンカーとして新たな旅を始めました。たっぷりの具材と無添加ハンバーグを贅沢に挟んだ一品は、体にも心にもやさしい味わい。「食」がもたらす温もりを、あなたのもとへお届けします。',
 };
 
 // export const kosugi = Kosugi({
