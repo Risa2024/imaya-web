@@ -202,7 +202,7 @@ export function MenuList() {
             <h3 className='text-base font-bold text-gray-800 md:text-lg'>
               100%北海道クリームチーズ
             </h3>
-            <p className='text-xs text-gray-500 md:text-sm'>MIXED EGG</p>
+            <p className='text-xs text-gray-500 md:text-sm'>CREAM CHEESE</p>
             <p className='mt-1 text-sm font-medium text-orange-600 md:text-base'>600円</p>
           </div>
         </div>
