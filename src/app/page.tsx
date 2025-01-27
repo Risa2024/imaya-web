@@ -101,7 +101,7 @@ export default async function WelcomePage() {
                         <br />
                         ３時間待ちは当たり前の大人気店です。
                       </p>
-                      <Button className='mt-4 rounded-full bg-gray-900 px-10 py-4 text-sm text-white transition-all hover:scale-105 hover:bg-gray-600 sm:px-12 sm:py-5 sm:text-base'>
+                      <Button className='mb-10 mt-4 rounded-full bg-gray-900 px-10 py-4 text-sm text-white transition-all hover:scale-105 hover:bg-gray-600 sm:px-12 sm:py-5 sm:text-base'>
                         <Link href='/about'>今屋のハンバーガー愛媛とは</Link>
                       </Button>
                     </div>
@@ -136,7 +136,7 @@ export default async function WelcomePage() {
                         <br />
                         幻のハンバーガーを味わいたいと、３時間待ちは当たり前の大人気店です。
                       </p>
-                      <Button className='mt-4 rounded-full bg-gray-900 px-10 py-4 text-sm text-white transition-all hover:scale-105 hover:bg-gray-600 sm:px-12 sm:py-5 sm:text-base'>
+                      <Button className='mb-10 mt-4 rounded-full bg-gray-900 px-10 py-4 text-sm text-white transition-all hover:scale-105 hover:bg-gray-600 sm:px-12 sm:py-5 sm:text-base'>
                         <Link href='/about'>今屋のハンバーガー愛媛とは</Link>
                       </Button>
                     </div>

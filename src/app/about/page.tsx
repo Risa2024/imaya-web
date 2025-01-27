@@ -85,7 +85,7 @@ export default async function AboutPage() {
         これ以上の喜びはありません。
       </p>
       <p className='text-center'>
-        <Button className='mb-16 rounded-full bg-white px-12 py-5 hover:bg-gray-200'>
+        <Button className='mb-10 mt-4 rounded-full bg-gray-900 px-10 py-4 text-sm text-white transition-all hover:scale-105 hover:bg-gray-600 sm:px-12 sm:py-5 sm:text-base'>
           <Link href='/'>ホームに戻る</Link>
         </Button>
       </p>
