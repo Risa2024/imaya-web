@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default async function AboutPage() {
   return (
-    <div className='mx-auto max-w-5xl px-4'>
+    <div className='mx-auto max-w-5xl bg-orange-50/30 px-4'>
       {/* <h1 className='mb-8 text-base font-medium bg-green-50 p-4 md:text-center'>About Us</h1> */}
       <h2 className='mb-2 text-2xl font-bold'>
         <br />
