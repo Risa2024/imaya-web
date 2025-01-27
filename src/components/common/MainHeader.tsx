@@ -17,38 +17,43 @@ export const MainHeader = () => {
       <div className='z-50 mx-auto flex max-w-6xl items-center justify-between py-5'>
         {/* 左側のロゴと文字 */}
         <div className='ml-3 flex items-center gap-3'>
-          <div className='relative'>
-            <Image
-              src='/imaya.jpg'
-              alt='今屋のハンバーガー'
-              width={35}
-              height={35}
-              className='rounded-xl object-cover shadow-sm transition-transform duration-300 hover:scale-105'
-            />
-          </div>
-
-          <div className='flex flex-col'>
-            {/* PC版 */}
-            <div className='hidden md:block'>
-              <h1 className='text-2xl font-bold tracking-wide text-gray-900'>
-                今屋のハンバーガー 愛媛
-              </h1>
-              <span className='mt-0.5 block text-center text-xs font-medium tracking-[0.2em] text-gray-500'>
-                IMAYA HAMBURGER EHIME
-              </span>
+          <Link
+            href='/'
+            className='group flex items-center gap-3 transition-all duration-300 hover:opacity-80'
+          >
+            <div className='relative'>
+              <Image
+                src='/imaya.jpg'
+                alt='今屋のハンバーガー'
+                width={35}
+                height={35}
+                className='rounded-xl object-cover shadow-sm transition-transform duration-300 group-hover:scale-105'
+              />
             </div>
 
-            {/* モバイル版 */}
-            <div className='md:hidden'>
-              <h1 className='text-lg font-bold tracking-wide text-gray-900'>
-                今屋のハンバーガー
-                <span className='ml-1 text-base'>愛媛</span>
-              </h1>
-              <span className='mt-0.5 block text-center text-[10px] font-medium tracking-[0.15em] text-gray-500'>
-                IMAYA HAMBURGER EHIME
-              </span>
+            <div className='flex flex-col'>
+              {/* PC版 */}
+              <div className='hidden md:block'>
+                <h1 className='text-2xl font-bold tracking-wide text-gray-900'>
+                  今屋のハンバーガー 愛媛
+                </h1>
+                <span className='mt-0.5 block text-center text-xs font-medium tracking-[0.2em] text-gray-500'>
+                  IMAYA HAMBURGER EHIME
+                </span>
+              </div>
+
+              {/* モバイル版 */}
+              <div className='md:hidden'>
+                <h1 className='text-lg font-bold tracking-wide text-gray-900'>
+                  今屋のハンバーガー
+                  <span className='ml-1 text-base'>愛媛</span>
+                </h1>
+                <span className='mt-0.5 block text-center text-[10px] font-medium tracking-[0.15em] text-gray-500'>
+                  IMAYA HAMBURGER EHIME
+                </span>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
         {/* デスクトップメニュー */}
         <div className='hidden flex-row items-center gap-8 md:flex'>
