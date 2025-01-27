@@ -33,22 +33,75 @@ export const MainHeader = () => {
           <Link href='/about'>私たちについて</Link>
           <Link href='/#contact'>お問い合わせ</Link>
         </div>
-        {/* モバイルサイズでのメニューボタン */}
-        <div className='mr-3 bg-white lg:hidden'>
-          <Button variant='default' size='icon' onClick={toggleMenu}>
-            <Menu />
-            {/*メニュータグを置く*/}
+        {/* モバイルメニューボタン */}
+        <div className='mr-3 lg:hidden'>
+          <Button
+            variant='ghost'
+            size='icon'
+            onClick={toggleMenu}
+            className='relative overflow-hidden rounded-xl bg-white/80 transition-all duration-300 hover:bg-white hover:shadow-md active:scale-95'
+          >
+            <Menu className='h-5 w-5 text-gray-700' />
           </Button>
-          {/* <button onClick={toggleMenu} className='rounded bg-gray-200 p-2'>
-            メニュー
-          </button> */}
-          {/* モバイルサイズでのトグルメニュー */}
+
+          {/* モバイルメニュー */}
           {isMenuOpen && (
-            <div className='absolute left-0 top-12 z-50 flex w-full flex-col gap-2 bg-white p-4 shadow-md'>
-              <Link href='/'>ホーム</Link>
-              <Link href='/#menu'>メニュー</Link>
-              <Link href='/about'>私たちについて</Link>
-              <Link href='/#contact'>お問い合わせ</Link>
+            <div className='absolute left-0 top-[72px] z-[100] w-full'>
+              <div className='mx-4 overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg backdrop-blur-sm'>
+                <nav className='flex flex-col space-y-2'>
+                  <Link
+                    href='/'
+                    className='group relative overflow-hidden rounded-xl px-4 py-3 transition-all duration-300 hover:scale-[1.02]'
+                  >
+                    <span className='relative z-10 flex items-center text-gray-600 transition-colors duration-300 group-hover:text-gray-900'>
+                      <span className='mr-2 scale-90 opacity-0 transition-all duration-300 group-hover:scale-100 group-hover:opacity-100'>
+                        →
+                      </span>
+                      ホーム
+                    </span>
+                    <span className='absolute inset-0 -z-10 bg-gradient-to-r from-orange-50 to-orange-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100'></span>
+                  </Link>
+
+                  <Link
+                    href='/#menu'
+                    className='group relative overflow-hidden rounded-xl px-4 py-3 transition-all duration-300 hover:scale-[1.02]'
+                  >
+                    <span className='relative z-10 flex items-center text-gray-600 transition-colors duration-300 group-hover:text-gray-900'>
+                      <span className='mr-2 scale-90 opacity-0 transition-all duration-300 group-hover:scale-100 group-hover:opacity-100'>
+                        →
+                      </span>
+                      メニュー
+                    </span>
+                    <span className='absolute inset-0 -z-10 bg-gradient-to-r from-orange-50 to-orange-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100'></span>
+                  </Link>
+
+                  <Link
+                    href='/about'
+                    className='group relative overflow-hidden rounded-xl px-4 py-3 transition-all duration-300 hover:scale-[1.02]'
+                  >
+                    <span className='relative z-10 flex items-center text-gray-600 transition-colors duration-300 group-hover:text-gray-900'>
+                      <span className='mr-2 scale-90 opacity-0 transition-all duration-300 group-hover:scale-100 group-hover:opacity-100'>
+                        →
+                      </span>
+                      私たちについて
+                    </span>
+                    <span className='absolute inset-0 -z-10 bg-gradient-to-r from-orange-50 to-orange-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100'></span>
+                  </Link>
+
+                  <Link
+                    href='/#contact'
+                    className='group relative overflow-hidden rounded-xl px-4 py-3 transition-all duration-300 hover:scale-[1.02]'
+                  >
+                    <span className='relative z-10 flex items-center text-gray-600 transition-colors duration-300 group-hover:text-gray-900'>
+                      <span className='mr-2 scale-90 opacity-0 transition-all duration-300 group-hover:scale-100 group-hover:opacity-100'>
+                        →
+                      </span>
+                      お問い合わせ
+                    </span>
+                    <span className='absolute inset-0 -z-10 bg-gradient-to-r from-orange-50 to-orange-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100'></span>
+                  </Link>
+                </nav>
+              </div>
             </div>
           )}
         </div>

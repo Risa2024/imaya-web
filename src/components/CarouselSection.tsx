@@ -13,7 +13,7 @@ import {
 export function CarouselSection() {
   return (
     <Carousel
-      className='z-0'
+      className='relative z-0'
       plugins={[
         Autoplay({
           delay: 4000,
