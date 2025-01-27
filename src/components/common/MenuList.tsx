@@ -1,14 +1,17 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
+import { UtensilsCrossed } from 'lucide-react';
 
 export function MenuList() {
   return (
     <div className='mx-auto max-w-7xl px-4'>
       {/* メニューヘッダー */}
       <div className='mb-12 text-center'>
-        <h2 className='mb-2 text-sm font-medium text-muted-foreground'>menu</h2>
-        <h1 className='text-xl font-bold md:text-3xl'>メニュー</h1>
+        <div className='mb-2 flex items-center justify-center gap-1.5'>
+          <UtensilsCrossed className='h-[18px] w-[18px] text-gray-500' strokeWidth={1.5} />
+        </div>
+        <h2 className='text-xl font-bold tracking-tight text-gray-900 md:text-3xl'>メニュー</h2>
       </div>
 
       {/* メニューグリッド */}

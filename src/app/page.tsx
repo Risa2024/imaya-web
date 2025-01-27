@@ -8,6 +8,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { MainFooter } from '@/components/common/MainFooter';
+import { Scroll } from 'lucide-react';
 
 async function getNewsList() {
   //動機処理
@@ -63,7 +64,9 @@ export default async function WelcomePage() {
                   <div className='flex flex-col items-center py-8 md:hidden'>
                     {/* タイトルセクション */}
                     <div className='flex flex-col items-center gap-2 pb-6'>
-                      <h2 className='text-sm font-medium text-muted-foreground'>history</h2>
+                      <div className='mb-2 flex items-center justify-center gap-1.5'>
+                        <Scroll className='h-[18px] w-[18px] text-gray-500' strokeWidth={1.5} />
+                      </div>
                       <h1 className='text-xl font-bold sm:text-2xl'>今屋のハンバーガーの歴史</h1>
                     </div>
 
@@ -124,7 +127,9 @@ export default async function WelcomePage() {
                     </div>
                     <div className='flex w-[500px] flex-col items-center gap-4'>
                       <div className='flex flex-col items-center gap-2'>
-                        <h2 className='text-sm font-medium text-muted-foreground'>history</h2>
+                        <div className='mb-2 flex items-center justify-center gap-1.5'>
+                          <Scroll className='h-[18px] w-[18px] text-gray-500' strokeWidth={1.5} />
+                        </div>
                         <h1 className='mb-5 text-2xl font-bold lg:text-3xl'>
                           今屋のハンバーガーの歴史
                         </h1>

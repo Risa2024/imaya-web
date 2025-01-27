@@ -3,6 +3,7 @@
 import { News } from '@/types/microcms';
 import { formatDate } from '@/lib/utils';
 import DOMPurify from 'isomorphic-dompurify';
+import { Bell } from 'lucide-react';
 
 type Props = {
   news: News[];
@@ -11,9 +12,12 @@ type Props = {
 export const NewsList = ({ news }: Props) => {
   return (
     <div className='mt-md:py-20 mx-auto w-full max-w-4xl px-4'>
+      {/* ニュースヘッダー */}
       <div className='mb-12 text-center'>
-        <h2 className='mb-2 text-sm font-medium text-muted-foreground'>News</h2>
-        <h1 className='text-xl font-bold md:text-3xl'>お知らせ</h1>
+        <div className='mb-2 flex items-center justify-center gap-1.5'>
+          <Bell className='h-[18px] w-[18px] text-gray-500' strokeWidth={1.5} />
+        </div>
+        <h2 className='text-xl font-bold tracking-tight text-gray-900 md:text-3xl'>お知らせ</h2>
       </div>
 
       {/* モバイル・タブレット用デザイン */}

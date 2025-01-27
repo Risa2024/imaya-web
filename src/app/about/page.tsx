@@ -1,10 +1,17 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import { Store } from 'lucide-react';
 
 export default async function AboutPage() {
   return (
     <div className='mx-auto max-w-5xl bg-orange-50/30 px-4'>
+      <div className='flex flex-col items-center gap-2 pb-6 pt-12'>
+        <div className='mb-2 flex items-center justify-center gap-1.5'>
+          <Store className='h-[18px] w-[18px] text-gray-500' strokeWidth={1.5} />
+        </div>
+        <h1 className='text-xl font-bold sm:text-2xl'>私たちについて</h1>
+      </div>
       {/* <h1 className='mb-8 text-base font-medium bg-green-50 p-4 md:text-center'>About Us</h1> */}
       <h2 className='mb-2 text-2xl font-bold'>
         <br />
