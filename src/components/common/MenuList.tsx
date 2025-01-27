@@ -5,7 +5,7 @@ import { UtensilsCrossed } from 'lucide-react';
 
 export function MenuList() {
   return (
-    <div className='mx-auto max-w-7xl px-4'>
+    <div id='menu' className='mx-auto max-w-7xl px-4'>
       {/* メニューヘッダー */}
       <div className='mb-12 text-center'>
         <div className='mb-2 flex items-center justify-center gap-1.5'>

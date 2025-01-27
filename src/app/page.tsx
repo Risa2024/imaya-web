@@ -159,7 +159,7 @@ export default async function WelcomePage() {
             <MenuList />
           </div>
           {/* お問い合わせ */}
-          <div className='relative overflow-hidden'>
+          <div id='contact' className='relative overflow-hidden'>
             {/* グラデーション背景 */}
             <div className='absolute inset-0 bg-gradient-to-br from-fuchsia-100/80 via-pink-50/70 to-purple-50/60 opacity-85'></div>
 
