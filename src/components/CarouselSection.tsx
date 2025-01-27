@@ -27,49 +27,49 @@ export function CarouselSection() {
       <CarouselContent className=''>
         <CarouselItem>
           <Image
-            src='/kitchenLg.jpg'
+            src='/kitchen2.png'
             alt='Carousel Image 1'
             width={1200}
-            height={630}
+            height={850}
             className='h-auto w-full object-cover md:hidden'
           />
           <Image
-            src='/kitchen.png'
+            src='/kitchen2.png'
             alt='Carousel Image 1'
             width={1200}
-            height={630}
+            height={750}
             className='hidden h-auto w-full object-cover md:block'
           />
         </CarouselItem>
         <CarouselItem>
           <Image
-            src='/tomatoLg.jpg'
+            src='/tomato2.png'
             alt='Carousel Image 2'
             width={1200}
-            height={630}
+            height={850}
             className='h-auto w-full object-cover md:hidden'
           />
           <Image
-            src='/tomato.png'
+            src='/tomato2.png'
             alt='Carousel Image 2'
             width={1200}
-            height={630}
+            height={750}
             className='hidden h-auto w-full object-cover md:block'
           />
         </CarouselItem>
         <CarouselItem>
           <Image
-            src='/sosegiLg.jpg'
+            src='/sosegi3.png'
             alt='Carousel Image 3'
             width={1200}
-            height={630}
+            height={850}
             className='h-auto w-full object-cover md:hidden'
           />
           <Image
-            src='/sosegi.png'
+            src='/sosegi3.png'
             alt='Carousel Image 3'
             width={1200}
-            height={630}
+            height={750}
             className='hidden h-auto w-full object-cover md:block'
           />
         </CarouselItem>
