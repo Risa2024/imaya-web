@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-export const MenuList = () => {
+export function MenuList() {
   return (
     <div className='mx-auto max-w-7xl px-4'>
       {/* メニューヘッダー */}
@@ -18,10 +18,16 @@ export const MenuList = () => {
           className='mix-blend-multiply transition-all hover:scale-105'
         />
       </div>
+
       {/* メニューグリッド */}
       <div className='mx-auto grid max-w-7xl grid-cols-2 gap-3 md:grid-cols-3 md:gap-6 lg:grid-cols-4'>
-        {/* メニューアイテム */}
-        <div className='overflow-hidden rounded-2xl bg-white p-2 shadow-md transition-shadow duration-300 hover:shadow-md md:p-4'>
+        {/* 1位 ミックスエッグ */}
+        <div className='group relative overflow-hidden rounded-2xl bg-white p-2 shadow-md transition-shadow duration-300 hover:shadow-lg md:p-4'>
+          <div className='absolute left-1 top-1 md:left-2 md:top-2'>
+            <span className='text-3xl md:text-4xl' role='img' aria-label='1位'>
+              🥇
+            </span>
+          </div>
           <div className='relative aspect-square w-full'>
             <Image
               src='/mixegg.jpg'
@@ -38,7 +44,13 @@ export const MenuList = () => {
           </div>
         </div>
 
-        <div className='overflow-hidden rounded-2xl bg-white p-2 shadow-md transition-shadow duration-300 hover:shadow-md md:p-4'>
+        {/* 2位 ミックスチーズ */}
+        <div className='group relative overflow-hidden rounded-2xl bg-white p-2 shadow-md transition-shadow duration-300 hover:shadow-lg md:p-4'>
+          <div className='absolute left-1 top-1 md:left-2 md:top-2'>
+            <span className='text-3xl md:text-4xl' role='img' aria-label='2位'>
+              🥈
+            </span>
+          </div>
           <div className='relative aspect-square w-full'>
             <Image
               src='/mixedCheese.jpg'
@@ -55,7 +67,13 @@ export const MenuList = () => {
           </div>
         </div>
 
-        <div className='overflow-hidden rounded-2xl bg-white p-2 shadow-md transition-shadow duration-300 hover:shadow-md md:p-4'>
+        {/* 3位 フランクエッグチーズ */}
+        <div className='group relative overflow-hidden rounded-2xl bg-white p-2 shadow-md transition-shadow duration-300 hover:shadow-lg md:p-4'>
+          <div className='absolute left-1 top-1 md:left-2 md:top-2'>
+            <span className='text-3xl md:text-4xl' role='img' aria-label='3位'>
+              🥉
+            </span>
+          </div>
           <div className='relative aspect-square w-full'>
             <Image
               src='/FrankEggC.jpg'
@@ -72,6 +90,7 @@ export const MenuList = () => {
           </div>
         </div>
 
+        {/* 他のメニュー */}
         <div className='overflow-hidden rounded-2xl bg-white p-2 shadow-md transition-shadow duration-300 hover:shadow-md md:p-4'>
           <div className='relative aspect-square w-full'>
             <Image
@@ -229,4 +248,4 @@ export const MenuList = () => {
       </div>
     </div>
   );
-};
+}
