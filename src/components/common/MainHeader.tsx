@@ -34,7 +34,7 @@ export const MainHeader = () => {
           <Link href='/#contact'>お問い合わせ</Link>
         </div>
         {/* モバイルサイズでのメニューボタン */}
-        <div className='mr-3 lg:hidden'>
+        <div className='mr-3 bg-white lg:hidden'>
           <Button variant='default' size='icon' onClick={toggleMenu}>
             <Menu />
             {/*メニュータグを置く*/}
