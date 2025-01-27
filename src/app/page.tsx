@@ -127,7 +127,7 @@ export default async function WelcomePage() {
                     </div>
                     <div className='flex w-[500px] flex-col items-center gap-4'>
                       <div className='flex flex-col items-center gap-2'>
-                        <div className='mb-2 flex items-center justify-center gap-1.5'>
+                        <div className='mb-2 flex items-center justify-center gap-1.5 pt-12'>
                           <Scroll className='h-[18px] w-[18px] text-gray-500' strokeWidth={1.5} />
                         </div>
                         <h1 className='mb-5 text-2xl font-bold lg:text-3xl'>
