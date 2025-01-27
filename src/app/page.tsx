@@ -81,11 +81,15 @@ export default async function WelcomePage() {
                     {/* テキストコンテンツ */}
                     <div className='flex flex-col items-center gap-4 px-6'>
                       <p className='text-center text-sm leading-7 tracking-widest sm:text-base'>
-                        今屋のハンバーガーは、今から50年前
+                        今屋のハンバーガーは、
                         <br />
-                        福岡市、西公園の展望台で
+                        今から50年前、 福岡市
                         <br />
-                        「今崎勝美」さんによって生まれました。
+                        西公園の展望台で
+                        <br />
+                        「今崎勝美」さん
+                        <br />
+                        によって 生まれました。
                         <br />
                         <br />
                         ホットドックにかける熱い情熱と
