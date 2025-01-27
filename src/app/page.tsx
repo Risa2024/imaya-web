@@ -216,7 +216,7 @@ export default async function WelcomePage() {
                 </div>
 
                 {/* モバイル版 */}
-                <div className='flex flex-col items-center gap-10 py-3 md:hidden'>
+                <div id='contact' className='flex flex-col items-center gap-10 py-3 md:hidden'>
                   {/* タイトルとInstagramロゴ */}
                   <div className='flex flex-col items-center'>
                     <p className='mb-1 text-center text-xl font-bold tracking-wider'>

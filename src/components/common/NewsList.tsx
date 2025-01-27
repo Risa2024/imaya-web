@@ -10,14 +10,14 @@ type Props = {
 
 export const NewsList = ({ news }: Props) => {
   return (
-    <div className='mt-md:py-20 mx-auto w-full px-4'>
+    <div className='mt-md:py-20 mx-auto w-full max-w-4xl px-4'>
       <div className='mb-12 text-center'>
         <h2 className='mb-2 text-sm font-medium text-muted-foreground'>News</h2>
         <h1 className='text-xl font-bold md:text-3xl'>お知らせ</h1>
       </div>
 
       {/* モバイル・タブレット用デザイン */}
-      <div className='mx-auto max-w-3xl space-y-8 lg:hidden'>
+      <div className='mx-auto max-w-3xl space-y-6 lg:hidden'>
         {news.map((item) => (
           <div
             key={item.id}
@@ -46,18 +46,25 @@ export const NewsList = ({ news }: Props) => {
       {/* デスクトップ用デザイン */}
       <div className='hidden space-y-4 lg:block'>
         {news.map((item) => (
-          <div key={item.id} className='flex items-start gap-4 border-b border-gray-200 pb-4'>
-            <div className='min-w-0 flex-1'>
-              <h3 className='mb-3 text-lg font-medium leading-tight'>{item.title}</h3>
+          <div
+            key={item.id}
+            className='group flex items-center justify-between gap-4 border-b border-gray-200 pb-4 transition-all hover:bg-white/50'
+          >
+            <div className='min-w-0 flex-1 px-4 py-2'>
+              <div className='flex items-center justify-between'>
+                <h3 className='mb-3 text-lg font-medium leading-tight group-hover:text-gray-900'>
+                  {item.title}
+                </h3>
+                <p className='ml-4 shrink-0 text-sm text-muted-foreground'>
+                  {formatDate(item.publishedAt)}
+                </p>
+              </div>
               {item.content && (
                 <div
-                  className='mb-2 text-sm text-muted-foreground'
+                  className='text-sm text-muted-foreground'
                   dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.content) }}
                 />
               )}
-              <div>
-                <p className='text-sm text-muted-foreground'>{formatDate(item.publishedAt)}</p>
-              </div>
             </div>
           </div>
         ))}
