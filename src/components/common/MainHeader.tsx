@@ -26,12 +26,39 @@ export const MainHeader = () => {
           />
           <h1 className='text-xl font-bold md:text-3xl'>今屋のハンバーガ 愛媛</h1>
         </div>
-        <div className='hidden flex-row items-center gap-4 md:flex'>
-          {/* デスクトップサイズでのメニュー表示 */}
-          <Link href='/'>ホーム</Link>
-          <Link href='/#menu'>メニュー</Link>
-          <Link href='/about'>私たちについて</Link>
-          <Link href='/#contact'>お問い合わせ</Link>
+        {/* デスクトップメニュー */}
+        <div className='hidden flex-row items-center gap-8 md:flex'>
+          <Link
+            href='/'
+            className='group relative px-3 py-2 text-gray-600 transition-all duration-300 hover:text-gray-900'
+          >
+            <span className='relative z-10'>ホーム</span>
+            <span className='absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-gray-600 to-gray-900 transition-all duration-300 ease-out group-hover:w-full'></span>
+          </Link>
+
+          <Link
+            href='/#menu'
+            className='group relative px-3 py-2 text-gray-600 transition-all duration-300 hover:text-gray-900'
+          >
+            <span className='relative z-10'>メニュー</span>
+            <span className='absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-gray-600 to-gray-900 transition-all duration-300 ease-out group-hover:w-full'></span>
+          </Link>
+
+          <Link
+            href='/about'
+            className='group relative px-3 py-2 text-gray-600 transition-all duration-300 hover:text-gray-900'
+          >
+            <span className='relative z-10'>私たちについて</span>
+            <span className='absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-gray-600 to-gray-900 transition-all duration-300 ease-out group-hover:w-full'></span>
+          </Link>
+
+          <Link
+            href='/#contact'
+            className='group relative px-3 py-2 text-gray-600 transition-all duration-300 hover:text-gray-900'
+          >
+            <span className='relative z-10'>お問い合わせ</span>
+            <span className='absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-gray-600 to-gray-900 transition-all duration-300 ease-out group-hover:w-full'></span>
+          </Link>
         </div>
         {/* モバイルメニューボタン */}
         <div className='mr-3 lg:hidden'>
