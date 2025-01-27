@@ -43,13 +43,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ja' className={`h-full ${notoSansJP.className}`}>
-      <head>
-        {/* Google Search Console verification meta tag */}
-        <meta
-          name='google-site-verification'
-          content='8ikgo81jBqMD8mLDf2WPrgV_eydOHasX5pM14BEgfs0'
-        />
-      </head>
       <body className='flex min-h-screen flex-col'>
         <MainHeader />
         {/* <MainHeaderTest /> */}
