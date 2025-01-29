@@ -9,12 +9,12 @@ export default async function AboutPage() {
         <h1 className='text-xl font-bold sm:text-2xl'>私たちについて</h1>
       </div>
       {/* <h1 className='mb-8 text-base font-medium bg-green-50 p-4 md:text-center'>About Us</h1> */}
-      <h2 className='mb-2 text-2xl font-bold'>
+      <h2 className='mb-2 text-base font-bold md:text-2xl'>
         <br />
-        <span>今屋のハンバーガー 愛媛をはじめた想い</span>
+        <span>今屋のハンバーガーえひめ をはじめた想い</span>
         <hr className='my-2 border-gray-300' />
       </h2>
-      <p className='mb-5 pb-5 tracking-widest'>
+      <p className='mb-5 pb-5 text-sm tracking-widest md:text-base'>
         <br />
         「いっぱいキャベツ入れてあげてよ。」
         <br />
@@ -34,11 +34,11 @@ export default async function AboutPage() {
         私たちの想いが込められています。
       </p>
 
-      <h2 className='mb-2 text-2xl font-bold'>
+      <h2 className='mb-2 text-base font-bold md:text-2xl'>
         <span>小さなキッチンカーに込めた夢</span>
         <hr className='my-2 border-gray-300' />
       </h2>
-      <p className='mb-5 pb-5'>
+      <p className='mb-5 pb-5 text-sm tracking-widest md:text-base'>
         <br />
         私は小さなキッチンカーを作りました。
         <br />
@@ -64,12 +64,12 @@ export default async function AboutPage() {
         <Image src='/about.png' alt='木漏れ日' width={1200} height={630} />
       </div>
 
-      <h2 className='mb-2 text-2xl font-bold'>
+      <h2 className='mb-2 text-base font-bold md:text-2xl'>
         <span>奇跡的に与えられた時間を誰かのために</span>
         <hr className='my-2 border-gray-300' />
       </h2>
       <br />
-      <p className='mb-5 pb-5'>
+      <p className='mb-5 pb-5 text-sm tracking-widest md:text-base'>
         奇跡的に与えられたこの時間を、誰かの幸せのために使いたい。
         <br />
         <br />

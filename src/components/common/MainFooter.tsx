@@ -19,14 +19,14 @@ export function MainFooter() {
                 <div className='overflow-hidden rounded-xl transition-all duration-300 group-hover:shadow-md'>
                   <Image
                     src='/imaya.jpg'
-                    alt='今屋のハンバーガー'
+                    alt='今屋のハンバーガー えひめ'
                     width={45}
                     height={45}
                     className='transform object-cover transition-all duration-300 group-hover:scale-110'
                   />
                 </div>
                 <div className='flex flex-col'>
-                  <h3 className='text-lg font-bold text-gray-800'>今屋のハンバーガー 愛媛</h3>
+                  <h3 className='text-lg font-bold text-gray-800'>今屋のハンバーガー えひめ</h3>
                   <span className='ml-6 text-xs tracking-wider text-gray-500'>
                     IMAYA HAMBURGER EHIME
                   </span>
@@ -173,7 +173,7 @@ export function MainFooter() {
                 height={35}
                 className='rounded-xl'
               />
-              <h3 className='text-base font-bold text-gray-800'>今屋のハンバーガー 愛媛</h3>
+              <h3 className='text-base font-bold text-gray-800'>今屋のハンバーガー えひめ</h3>
             </div>
             <p className='text-center text-sm leading-relaxed text-gray-600'>
               体に優しい食材で栄養バランスを考えた、
@@ -201,7 +201,7 @@ export function MainFooter() {
         {/* コピーライト */}
         <div className='border-t border-gray-200/80 pt-8'>
           <p className='text-center text-sm font-medium text-gray-500'>
-            今屋のハンバーガー 愛媛 © 2025
+            今屋のハンバーガー えひめ © 2025
           </p>
         </div>
       </div>

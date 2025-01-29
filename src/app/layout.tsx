@@ -13,11 +13,19 @@ const notoSansJP = Noto_Sans_JP({
 
 export const dynamic = 'force-dynamic';
 export const metadata: Metadata = {
-  title: '今屋のハンバーガー 愛媛',
+  title: '今屋のハンバーガー えひめ',
   description:
     '今から50年前、福岡市の西公園展望台で誕生した"幻のハンバーガー"が、愛媛でキッチンカーとして新たな旅を始めました。たっぷりの具材と無添加ハンバーグを贅沢に挟んだ一品は、体にも心にもやさしい味わい。「食」がもたらす温もりを、あなたのもとへお届けします。',
   verification: {
     google: '8ikgo81jBqMD8mLDf2WPrgV_eydOHasX5pM14BEgfs0',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
 };
 

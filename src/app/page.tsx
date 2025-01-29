@@ -109,7 +109,7 @@ export default async function WelcomePage() {
                         ３時間待ちは当たり前の大人気店です。
                       </p>
                       <Button className='mb-3 mt-4 rounded-full bg-gray-900 px-10 py-4 text-sm text-white transition-all hover:scale-105 hover:bg-gray-600 sm:px-12 sm:py-5 sm:text-base'>
-                        <Link href='/about'>今屋のハンバーガー愛媛とは</Link>
+                        <Link href='/about'>今屋のハンバーガーえひめ とは</Link>
                       </Button>
                     </div>
                   </div>
@@ -146,7 +146,7 @@ export default async function WelcomePage() {
                         幻のハンバーガーを味わいたいと、３時間待ちは当たり前の大人気店です。
                       </p>
                       <Button className='mb-10 mt-4 rounded-full bg-gray-900 px-10 py-4 text-sm text-white transition-all hover:scale-105 hover:bg-gray-600 sm:px-12 sm:py-5 sm:text-base'>
-                        <Link href='/about'>今屋のハンバーガー愛媛とは</Link>
+                        <Link href='/about'>今屋のハンバーガーえひめ とは</Link>
                       </Button>
                     </div>
                   </div>
@@ -184,7 +184,7 @@ export default async function WelcomePage() {
                     {/* タイトルとInstagramロゴを含むコンテナ */}
                     <div className='mb-8 flex flex-col items-center justify-center'>
                       <p className='mb-4 text-center text-2xl font-bold tracking-wider lg:text-3xl'>
-                        今屋のハンバーガー 愛媛 公式
+                        今屋のハンバーガー えひめ 公式
                       </p>
                       <Image
                         src='/Instagram_logo.svg.png'
@@ -229,7 +229,7 @@ export default async function WelcomePage() {
                   {/* タイトルとInstagramロゴ */}
                   <div className='flex flex-col items-center'>
                     <p className='mb-1 text-center text-xl font-bold tracking-wider'>
-                      今屋のハンバーガー 愛媛 公式
+                      今屋のハンバーガー えひめ 公式
                     </p>
                     <Image
                       src='/Instagram_logo.svg.png'

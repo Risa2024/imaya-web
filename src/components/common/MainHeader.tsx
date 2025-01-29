@@ -24,7 +24,7 @@ export const MainHeader = () => {
             <div className='relative'>
               <Image
                 src='/imaya.jpg'
-                alt='今屋のハンバーガー'
+                alt='今屋のハンバーガー えひめ'
                 width={35}
                 height={35}
                 className='rounded-xl object-cover shadow-sm transition-transform duration-300 group-hover:scale-105'
@@ -35,7 +35,7 @@ export const MainHeader = () => {
               {/* PC版 */}
               <div className='hidden md:block'>
                 <h1 className='text-2xl font-bold tracking-wide text-gray-900'>
-                  今屋のハンバーガー 愛媛
+                  今屋のハンバーガー えひめ
                 </h1>
                 <span className='mt-0.5 block text-center text-xs font-medium tracking-[0.2em] text-gray-500'>
                   IMAYA HAMBURGER EHIME
@@ -45,8 +45,7 @@ export const MainHeader = () => {
               {/* モバイル版 */}
               <div className='md:hidden'>
                 <h1 className='text-lg font-bold tracking-wide text-gray-900'>
-                  今屋のハンバーガー
-                  <span className='ml-1 text-base'>愛媛</span>
+                  今屋のハンバーガー えひめ
                 </h1>
                 <span className='mt-0.5 block text-center text-[10px] font-medium tracking-[0.15em] text-gray-500'>
                   IMAYA HAMBURGER EHIME
