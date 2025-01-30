@@ -15,20 +15,20 @@ export const dynamic = 'force-dynamic';
 export const metadata: Metadata = {
   title: '今屋のハンバーガー えひめ',
   description:
-    '愛媛県松山市を中心に展開する今屋のハンバーガーのキッチンカー。50年前に福岡で生まれた伝説のハンバーガーが、愛媛に登場。無添加の手作りハンバーグと特製ソースが織りなす懐かしくも新しい味わい。ぜひ一度、お越し下さいませ。',
+    '【愛媛県松山市発】今屋のハンバーガーは、50年の歴史を持つ伝説のハンバーガー専門店です。無添加の手作りハンバーグと特製ソースにこだわった本格派ハンバーガーをキッチンカーで提供。イベントや企業様への出店も承っております。愛媛でハンバーガーの移動販売をお探しの方は、ぜひ今屋のハンバーガーへ。',
   keywords: [
     '今屋のハンバーガー',
     '今屋のハンバーガー えひめ',
     '今屋のハンバーガー 愛媛',
     '今屋のハンバーガー 松山',
     '今家',
-    '愛媛',
-    'キッチンカー',
-    'ハンバーガー',
-    '移動販売',
-    '松山市',
-    '無添加',
-    '手作り',
+    '愛媛 ハンバーガー',
+    '松山市 ハンバーガー',
+    'キッチンカー 愛媛',
+    'ハンバーガー 移動販売',
+    '松山市 キッチンカー',
+    '無添加 ハンバーガー',
+    '手作り ハンバーガー',
   ],
   verification: {
     google: '8ikgo81jBqMD8mLDf2WPrgV_eydOHasX5pM14BEgfs0',
@@ -41,6 +41,14 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  // icons: {
+  //   icon: [
+  //     { url: '/favicon.ico', sizes: '32x32' },
+  //     { url: '/icon.png', type: 'image/png', sizes: '32x32' },
+  //   ],
+  //   apple: [{ url: '/apple-icon.png', sizes: '180x180' }],
+  //   shortcut: '/favicon.ico',
+  // },
 };
 
 // export const kosugi = Kosugi({
