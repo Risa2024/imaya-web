@@ -55,7 +55,7 @@ export default async function AboutPage() {
         食事に困り、救いを求める人たちが多くいる現実を知りました。
         <br />
         <br />
-        そして大病を経験した私自身が、安心で安全な食の大切さを痛感しました。
+        そして病を経験した私自身が、安心で安全な食の大切さを痛感しました。
         <br />
         <br />
         健康を支える食事が、人の心を豊かにすることを身をもって感じたのです。
@@ -63,12 +63,6 @@ export default async function AboutPage() {
       <div className='mb-8'>
         <Image src='/about.png' alt='木漏れ日' width={1200} height={630} />
       </div>
-
-      <h2 className='mb-2 text-base font-bold md:text-2xl'>
-        <span>奇跡的に与えられた時間を誰かのために</span>
-        <hr className='my-2 border-gray-300' />
-      </h2>
-      <br />
       <p className='mb-5 pb-5 text-sm tracking-widest md:text-base'>
         奇跡的に与えられたこの時間を、誰かの幸せのために使いたい。
         <br />
@@ -88,7 +82,7 @@ export default async function AboutPage() {
         これ以上の喜びはありません。
       </p>
       <p className='text-center'>
-        <Button className='mb-10 mt-4 rounded-full bg-gray-900 px-10 py-4 text-sm text-white transition-all hover:scale-105 hover:bg-gray-600 sm:px-12 sm:py-5 sm:text-base'>
+        <Button className='my-10 rounded-full bg-gray-900 px-10 text-sm text-white transition-all hover:scale-105 hover:bg-gray-600 sm:px-12 sm:py-5 sm:text-base'>
           <Link href='/'>ホームに戻る</Link>
         </Button>
       </p>
