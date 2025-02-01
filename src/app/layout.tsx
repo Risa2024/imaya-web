@@ -20,7 +20,9 @@ export const metadata: Metadata = {
   keywords: [
     '今屋のハンバーガー',
     '今屋のハンバーガー えひめ',
+    '今屋のハンバーガーえひめ',
     '今屋のハンバーガー 愛媛',
+    '今屋のハンバーガー愛媛',
     '今屋のハンバーガー 松山',
     '愛媛 ハンバーガー',
     '松山市 ハンバーガー',
@@ -32,6 +34,8 @@ export const metadata: Metadata = {
     '今屋のハンバーガー 福岡',
     '今屋 愛媛',
     '今屋 えひめ',
+    '今屋 松山',
+    '今屋 愛媛',
   ],
   verification: {
     google: '8ikgo81jBqMD8mLDf2WPrgV_eydOHasX5pM14BEgfs0',
