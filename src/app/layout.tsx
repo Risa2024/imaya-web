@@ -48,8 +48,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: [{ url: '/icon.png', type: 'image/png' }, { url: '/favicon.ico' }],
-    shortcut: '/icon.png',
+    icon: [{ url: '/favicon.png', type: 'image/png' }],
+    shortcut: '/favicon.png',
   },
 };
 
