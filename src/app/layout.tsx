@@ -50,6 +50,15 @@ export const metadata: Metadata = {
   icons: {
     icon: [{ url: '/favicon.png', type: 'image/png' }],
     shortcut: '/favicon.png',
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180' }, // Apple用
+    ],
+    other: [
+      {
+        rel: 'mask-icon', // Safari用ピン留めアイコン
+        url: '/safari-pinned-tab.svg',
+      },
+    ],
   },
 };
 
