@@ -47,14 +47,10 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
-  // icons: {
-  //   icon: [
-  //     { url: '/favicon.ico', sizes: '32x32' },
-  //     { url: '/icon.png', type: 'image/png', sizes: '32x32' },
-  //   ],
-  //   apple: [{ url: '/apple-icon.png', sizes: '180x180' }],
-  //   shortcut: '/favicon.ico',
-  // },
+  icons: {
+    icon: [{ url: '/icon.png', type: 'image/png' }, { url: '/favicon.ico' }],
+    shortcut: '/icon.png',
+  },
 };
 
 // export const kosugi = Kosugi({
