@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /api/
 
-Sitemap: https://www.imaya-ehime.com/sitemap.xml 
+Sitemap: https://www.imaya-ehime.com/sitemap.xml
