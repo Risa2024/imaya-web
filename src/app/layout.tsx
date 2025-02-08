@@ -35,6 +35,8 @@ export const metadata: Metadata = {
     '松山 ハンバーガー六本松',
     '今屋のハンバーガー えひめ',
     '今屋のハンバーガー 松山',
+    '今屋のハンバーガー 六本松',
+    'いまや えひめ',
   ],
   verification: {
     google: '8ikgo81jBqMD8mLDf2WPrgV_eydOHasX5pM14BEgfs0',
