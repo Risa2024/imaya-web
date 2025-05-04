@@ -9,6 +9,7 @@
 - **スタイリング**: Tailwind CSS
 - **UIコンポーネント**: shadcn/ui
 - **CMS**: microCMS
+- **デプロイ**: Vercel
 
 ## 開発環境のセットアップ
 
