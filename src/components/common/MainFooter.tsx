@@ -192,9 +192,6 @@ export function MainFooter() {
             <Link href='/about' className='text-gray-600 transition-colors hover:text-gray-900'>
               私たちについて
             </Link>
-            <Link href='/#contact' className='text-gray-600 transition-colors hover:text-gray-900'>
-              お問い合わせ
-            </Link>
           </div>
         </div>
 

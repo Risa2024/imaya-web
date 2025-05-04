@@ -1,51 +1,57 @@
-# NextJS Starter Template
+# 今屋のハンバーガー えひめ 公式ウェブサイト
 
-A simple Next.js application with authentication and dashboard features.
+[今屋のハンバーガー えひめ](https://www.imaya-ehime.com/)の公式ウェブサイトのソースコードです。
 
-## Getting Started
+## 技術スタック
+
+- **フレームワーク**: Next.js 15.0.2
+- **言語**: TypeScript
+- **スタイリング**: Tailwind CSS
+- **UIコンポーネント**: shadcn/ui
+- **CMS**: microCMS
+
+## 開発環境のセットアップ
+
+### 必要条件
+
+- Node.js (バージョンは `.node-version` を参照)
+- Yarn
+
+### インストール
 
 ```bash
-npm run dev
-# or
+# 依存関係のインストール
+yarn install
+
+# 開発サーバーの起動
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 利用可能なスクリプト
 
-## Project Structure
+- `yarn dev`: 開発サーバーを起動
+- `yarn build`: プロダクションビルドを作成
+- `yarn start`: プロダクションビルドを実行
+- `yarn lint`: ESLintによるコードチェック
+- `yarn format`: Prettierによるコードフォーマット
+- `yarn ui`: shadcn/uiコンポーネントの追加
+
+## プロジェクト構造
 
 ```
 src/
-├── app/                  # App router
-├── components/          # Reusable components
-│   ├── providers/      # Context providers
-│   └── ui/            # UI components
-└── lib/               # Utility functions, types
+  ├── components/     # 共通コンポーネント
+  ├── app/           # ページコンポーネント
+  ├── lib/           # ユーティリティ関数
+  └── styles/        # グローバルスタイル
 ```
 
-### Naming Conventions
+## 品質管理
 
-- **Folders**: kebab-case
-
-  ```
-  components/ui/
-  ```
-
-- **React Components**: PascalCase
-
-  ```
-  Button.tsx
-  AuthProvider.tsx
-  ```
-
-- **Pages**: kebab-case
-
-  ```
-  page.tsx
-  layout.tsx
-  ```
-
-- **Utilities**: camelCase
+- ESLint: コード品質のチェック
+- Prettier: コードフォーマット
+- Husky: Gitフックによる品質管理
+- lint-staged: ステージングされたファイルのみのチェック
 
   ```
   utils.ts
