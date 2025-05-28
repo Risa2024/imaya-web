@@ -1,68 +1,62 @@
-# 今屋のハンバーガー えひめ 公式ウェブサイト
+# 今屋のハンバーガー えひめ ・ 公式ウェブサイト
 
-[今屋のハンバーガー えひめ](https://www.imaya-ehime.com/)の公式ウェブサイトのソースコードです。
+愛媛県松山市を中心に活動するキッチンカー「今屋のハンバーガー えひめ」の公式Webサイトを作成しました。
+体に優しい食材と愛情たっぷりのハンバーガーをお届けする、地域密着型のフードトラックです。
 
-## 技術スタック
+このプロジェクトは、私の初めてのWebサイト開発として、フロントエンドエンジニアの方のサポートを受けながら、
+デザインから実装まで一貫して取り組んだものです。
 
-- **フレームワーク**: Next.js 15.0.2
-- **言語**: TypeScript
-- **スタイリング**: Tailwind CSS
-- **UIコンポーネント**: shadcn/ui
-- **CMS**: microCMS
-- **デプロイ**: Vercel
+## サイトURL
 
-## 開発環境のセットアップ
+https://www.imaya-ehime.com/
 
-### 必要条件
+## スクリーンショット
 
-- Node.js (バージョンは `.node-version` を参照)
-- Yarn
+### トップページ
 
-### インストール
+![トップページ](public/hero.png)
 
-```bash
-# 依存関係のインストール
-yarn install
+### メニュー
 
-# 開発サーバーの起動
-yarn dev
-```
+![メニュー](public/readme.menu.png)
 
-### 利用可能なスクリプト
+### コンタクト
 
-- `yarn dev`: 開発サーバーを起動
-- `yarn build`: プロダクションビルドを作成
-- `yarn start`: プロダクションビルドを実行
-- `yarn lint`: ESLintによるコードチェック
-- `yarn format`: Prettierによるコードフォーマット
-- `yarn ui`: shadcn/uiコンポーネントの追加
+![コンタクト](public/contact.png)
 
-## プロジェクト構造
+## 主な機能
 
-```
-src/
-  ├── components/     # 共通コンポーネント
-  ├── app/           # ページコンポーネント
-  ├── lib/           # ユーティリティ関数
-  └── styles/        # グローバルスタイル
-```
+- 出店情報の確認
+- メニューの閲覧
+- お問い合わせ（Instagram DMへの誘導）
+- レスポンシブ対応（スマートフォン・タブレット・PC）
 
-## 品質管理
+## 使用技術
 
-- ESLint: コード品質のチェック
-- Prettier: コードフォーマット
-- Husky: Gitフックによる品質管理
-- lint-staged: ステージングされたファイルのみのチェック
+### フレームワーク・言語
 
-  ```
-  utils.ts
-  types.ts
-  ```
+- Next.js(Reactフレームワーク)
+- TypeScript
 
-- **API Routes**: kebab-case
-  ```
-  route.ts
-  ```
+### フロントエンド
+
+- Tailwind CSS
+- shadcn/ui(UIコンポーネントライブラリ)
+
+### CMS・バックエンド
+
+- microCMS
+
+### 開発環境
+
+- Node.js
+- Yarn(パッケージマネージャー)
+- ESLint(コード品質のチェック)
+- Prettier(コードフォーマット)
+
+### デプロイ
+
+- Vercel
 
 ## Learn More
 
