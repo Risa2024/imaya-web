@@ -23,6 +23,10 @@ https://www.imaya-ehime.com/
 
 ![コンタクト](public/contact.png)
 
+###　レスポンシブデザイン
+
+![レスポンシブ](public/responsive.png)
+
 ## 主な機能
 
 - 出店情報の確認
