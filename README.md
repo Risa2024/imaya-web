@@ -23,7 +23,7 @@ https://www.imaya-ehime.com/
 
 ![コンタクト](public/contact.png)
 
-###　レスポンシブデザイン
+### レスポンシブデザイン
 
 ![レスポンシブ](public/responsive.png)
 
