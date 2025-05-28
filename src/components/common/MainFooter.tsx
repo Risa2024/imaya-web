@@ -114,24 +114,6 @@ export function MainFooter() {
                     <span className='absolute -bottom-px left-0 h-px w-0 bg-gradient-to-r from-gray-600 to-gray-400 transition-all duration-300 ease-out group-hover:w-full'></span>
                   </span>
                 </Link>
-
-                <Link
-                  href='/#contact'
-                  className='group flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900'
-                >
-                  <svg className='h-4 w-4' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth={2}
-                      d='M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'
-                    />
-                  </svg>
-                  <span className='relative'>
-                    お問い合わせ
-                    <span className='absolute -bottom-px left-0 h-px w-0 bg-gradient-to-r from-gray-600 to-gray-400 transition-all duration-300 ease-out group-hover:w-full'></span>
-                  </span>
-                </Link>
               </div>
             </div>
 
